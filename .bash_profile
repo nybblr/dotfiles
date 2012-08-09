@@ -1,5 +1,9 @@
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm" # Load RVM function
 
+# Set language (Lion bug)
+export LANG=en_US.UTF-8
+export LC_ALL=en_US.UTF-8
+
 # Enable ctl-s shortcut for vim
 # zsh
 # alias vim="stty stop '' -ixoff ; vim"
