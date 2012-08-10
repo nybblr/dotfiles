@@ -171,6 +171,9 @@ map <leader>qq :qall<cr>
 map <leader>e :SyntasticCheck<cr>
 map <leader>tt :TagbarToggle<cr>
 
+map <leader>c :TComment<cr>
+map <leader>cc :TCommentInline<cr>
+
 map <leader>gb :Gblame<CR>
 map <leader>gs :Gstatus<CR>
 map <leader>gd :Gdiff<CR>
