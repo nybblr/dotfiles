@@ -1,8 +1,0 @@
-let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =6
-let g:netrw_dirhist_1='/Users/Jonathan/Development/Rails/quibble/app/models'
-let g:netrw_dirhist_2='/Users/Jonathan/Development/Rails/quibble/app'
-let g:netrw_dirhist_3='/Users/Jonathan/Development/Rails/quibble'
-let g:netrw_dirhist_4='/Users/Jonathan/Development/Rails/quibble/app/models'
-let g:netrw_dirhist_5='scp://root@cd-atl-03.cordata.com/var/www/vhosts/'
-let g:netrw_dirhist_6='scp://root@cd-atl-03.cordata.com//var/www/vhosts/'
