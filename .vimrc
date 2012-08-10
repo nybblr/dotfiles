@@ -162,6 +162,7 @@ map <leader>tx :tabnext<cr>
 map <leader>tp :tabprev<cr>
 map <leader>tf :tabfirst<cr>
 map <leader>tl :tablast<cr>
+
 map <leader>nt :NERDTree<cr>
 map <leader>nf :NERDTreeFind<cr>
 map <leader>rc :sp ~/.vimrc<cr>
@@ -170,6 +171,17 @@ map <leader>rt :RetabIndent<cr>
 map <leader>qq :qall<cr>
 map <leader>e :SyntasticCheck<cr>
 map <leader>tt :TagbarToggle<cr>
+
+nmap <leader>ac :Tabularize /,<cr>
+vmap <leader>ac :Tabularize /,<cr>
+nmap <leader>ap :Tabularize /\|<cr>
+vmap <leader>ap :Tabularize /\|<cr>
+nmap <Leader>a= :Tabularize /=<CR>
+vmap <Leader>a= :Tabularize /=<CR>
+nmap <Leader>a: :Tabularize /:\zs<CR>
+vmap <Leader>a: :Tabularize /:\zs<CR>
+nmap <Leader>ag :Tabularize /=><CR>
+vmap <Leader>ag :Tabularize /=><CR>
 
 map <leader>c :TComment<cr>
 map <leader>cc :TCommentInline<cr>
