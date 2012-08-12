@@ -111,6 +111,11 @@ set shiftwidth=2
 set noexpandtab
 set nu
 
+" Set backup/swap/undo file directory, and avoid collisions.
+set directory=~/.vim-tmp//,/var/tmp//,/tmp//,.
+set backupdir=~/.vim-tmp//,/var/tmp//,/tmp//,.
+set undodir=~/.vim-tmp//,/var/tmp//,/tmp//,.
+
 autocmd User Rails set noexpandtab
 
 autocmd vimenter * if !argc() | NERDTree | endif
