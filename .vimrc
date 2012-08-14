@@ -160,6 +160,10 @@ inoremap <expr> <leader>, pumvisible() \|\| &omnifunc == '' ?
 			\ "\" \\<lt>bs>\\<lt>C-n>\"\<CR>"
 " imap <C-@> <Nul>
 
+" Add lines without entering insert mode
+map <S-Enter> O<Esc>k
+map <CR> o<Esc>l
+
 " Leader mappings
 map <leader>tn :tabnew<cr>
 map <leader>tc :tabclose<cr>

@@ -23,3 +23,8 @@ vim()
   command vim "$@"
   stty "$STTYOPTS"
 }
+
+# Source bashrc for machine-centric config
+if [ -f ~/.bashrc ]; then
+  source ~/.bashrc
+fi
