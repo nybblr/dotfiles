@@ -202,6 +202,9 @@ vmap <Leader>ag :Tabularize /=><CR>
 
 map <leader>sw :%s/\s\+$<cr>
 
+map <leader>ts :Tab2Space<cr>
+map <leader>st :Space2Tab<cr>
+
 map <leader>c :TComment<cr>
 map <leader>cc :TCommentInline<cr>
 
