@@ -200,6 +200,8 @@ vmap <Leader>a: :Tabularize /:\zs<CR>
 nmap <Leader>ag :Tabularize /=><CR>
 vmap <Leader>ag :Tabularize /=><CR>
 
+map <leader>sw :%s/\s\+$<cr>
+
 map <leader>c :TComment<cr>
 map <leader>cc :TCommentInline<cr>
 
