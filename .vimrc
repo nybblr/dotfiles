@@ -182,7 +182,7 @@ map <leader>tl :tablast<cr>
 
 map <leader>nt :NERDTree<cr>
 map <leader>nf :NERDTreeFind<cr>
-map <leader>rc :sp ~/.vimrc<cr>
+map <leader>rc :edit ~/.vimrc<cr>
 map <leader>rv :so $MYVIMRC<cr>
 map <leader>rt :RetabIndent<cr>
 map <leader>qq :qall<cr>
