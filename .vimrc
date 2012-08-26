@@ -200,6 +200,10 @@ vmap <Leader>a: :Tabularize /:\zs<CR>
 nmap <Leader>ag :Tabularize /=><CR>
 vmap <Leader>ag :Tabularize /=><CR>
 
+map <leader>ss :ConqueTermVSplit bash<cr>
+map <leader>sh :ConqueTermSplit bash<cr>
+map <leader>sn :ConqueTermTab bash<cr>
+
 map <leader>sw :%s/\s\+$<cr>
 
 map <leader>ts :Tab2Space<cr>
