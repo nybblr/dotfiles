@@ -61,3 +61,15 @@
 [submodule ".vim/colors/sunset"]
 	path = .vim/colors/sunset
 	url = git://github.com/Beakr/sunset-vim.git
+
+[submodule ".vim/bundle/vim-easymotion"]
+	path = .vim/bundle/vim-easymotion
+	url = git://github.com/Lokaltog/vim-easymotion.git
+
+[submodule ".vim/bundle/snipmate-snippets"]
+	path = .vim/bundle/snipmate-snippets
+	url = git://github.com/scrooloose/snipmate-snippets.git
+
+[submodule ".vim/bundle/vim-ruby-conque"]
+	path = .vim/bundle/vim-ruby-conque
+	url = git://github.com/skwp/vim-ruby-conque.git

@@ -3,6 +3,9 @@ call pathogen#infect()
 " Pathogen support for color themes
 call pathogen#infect('colors')
 
+" Pathogen support for languages
+call pathogen#infect('langs')
+
 if has("gui_running")
 	" colorscheme solarized
 	" set background=light
