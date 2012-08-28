@@ -129,7 +129,13 @@ autocmd User Rails set noexpandtab
 autocmd vimenter * if !argc() | NERDTree | endif
 
 set timeoutlen=300
+
+" Allow single click for NERDTree
+let NERDTreeMouseMode=3
 let NERDTreeChDirMode=2
+
+" Detect if a tab was closed, and ensure that height of main window fills the screen (100% height)
+au TabEnter * let &lines=200
 
 " Control-s functionality for quick save
 " If the current buffer has never been saved, it will have no name,
@@ -179,6 +185,20 @@ map <leader>tx :tabnext<cr>
 map <leader>tp :tabprev<cr>
 map <leader>tf :tabfirst<cr>
 map <leader>tl :tablast<cr>
+
+" For mac users (using the 'apple' key)
+map <D-]> gt
+map <D-[> gT
+map <D-1> 1gt
+map <D-2> 2gt
+map <D-3> 3gt
+map <D-4> 4gt
+map <D-5> 5gt
+map <D-6> 6gt
+map <D-7> 7gt
+map <D-8> 8gt
+map <D-9> 9gt
+map <D-0> :tablast<cr>
 
 map <leader>nt :NERDTree<cr>
 map <leader>nf :NERDTreeFind<cr>
