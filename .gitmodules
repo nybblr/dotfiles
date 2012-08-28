@@ -57,3 +57,7 @@
 [submodule ".vim/colors/vim-colors-solarized"]
 	path = .vim/colors/vim-colors-solarized
 	url = git://github.com/altercation/vim-colors-solarized.git
+
+[submodule ".vim/colors/sunset"]
+	path = .vim/colors/sunset
+	url = git://github.com/Beakr/sunset-vim.git
