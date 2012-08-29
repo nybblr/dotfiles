@@ -22,6 +22,10 @@ if has("gui_running")
 	set macmeta
 endif
 
+if has("gui_macvim")
+	let macvim_hig_shift_movement = 1
+endif
+
 " An example for a vimrc file.
 "
 " Maintainer:	Bram Moolenaar <Bram@vim.org>
