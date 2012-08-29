@@ -18,6 +18,8 @@ if has("gui_running")
 	set guioptions-=T
 
 	set guifont=Panic\ Sans
+
+	set macmeta
 endif
 
 " An example for a vimrc file.
@@ -133,8 +135,8 @@ autocmd vimenter * if !argc() | NERDTree | endif
 
 set timeoutlen=300
 
-" Allow single click for NERDTree
-let NERDTreeMouseMode=3
+" Allow single click for NERDTree, but use double-click for files
+let NERDTreeMouseMode=2
 let NERDTreeChDirMode=2
 
 " Detect if a tab was closed, and ensure that height of main window fills the screen (100% height)
@@ -181,6 +183,9 @@ inoremap <expr> <leader>, pumvisible() \|\| &omnifunc == '' ?
 map <S-Enter> O<Esc>k
 map <CR> o<Esc>l
 
+" More intuitive undo
+map U :redo<cr>
+
 " Leader mappings
 map <leader>tn :tabnew<cr>
 map <leader>tc :tabclose<cr>
@@ -203,7 +208,7 @@ map <D-8> 8gt
 map <D-9> 9gt
 map <D-0> :tablast<cr>
 
-map <leader>nt :NERDTree<cr>
+map <leader>nt :NERDTreeToggle<cr>
 map <leader>nf :NERDTreeFind<cr>
 map <leader>rc :edit ~/.vimrc<cr>
 map <leader>rv :so $MYVIMRC<cr>
@@ -216,12 +221,12 @@ nmap <leader>ac :Tabularize /,<cr>
 vmap <leader>ac :Tabularize /,<cr>
 nmap <leader>ap :Tabularize /\|<cr>
 vmap <leader>ap :Tabularize /\|<cr>
-nmap <Leader>a= :Tabularize /=<CR>
-vmap <Leader>a= :Tabularize /=<CR>
-nmap <Leader>a: :Tabularize /:\zs<CR>
-vmap <Leader>a: :Tabularize /:\zs<CR>
-nmap <Leader>ag :Tabularize /=><CR>
-vmap <Leader>ag :Tabularize /=><CR>
+nmap <leader>a= :Tabularize /=<CR>
+vmap <leader>a= :Tabularize /=<CR>
+nmap <leader>a: :Tabularize /:\zs<CR>
+vmap <leader>a: :Tabularize /:\zs<CR>
+nmap <leader>ag :Tabularize /=><CR>
+vmap <leader>ag :Tabularize /=><CR>
 
 map <leader>ss :ConqueTermVSplit bash<cr>
 map <leader>sh :ConqueTermSplit bash<cr>
