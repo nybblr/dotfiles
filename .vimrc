@@ -17,7 +17,7 @@ if has("gui_running")
 	set guioptions-=l
 	set guioptions-=T
 
-	set guifont=Panic\ Sans
+	set guifont=Menlo,12
 
 	set macmeta
 endif
