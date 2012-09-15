@@ -38,3 +38,5 @@ plugins=(brew bundler gem rvm rake osx)
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
+
+growl() { echo -e $'\e]9;'${1}'\007' ; return ; }
