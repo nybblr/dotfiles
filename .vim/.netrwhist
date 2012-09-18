@@ -1,4 +1,8 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =2
+let g:netrw_dirhist_cnt =6
 let g:netrw_dirhist_1='/Users/Jonathan/Development/Ruby/Rails/omelet-ui'
 let g:netrw_dirhist_2='/Users/Jonathan/.dotfiles'
+let g:netrw_dirhist_3='/Users/Jonathan/Documents/College Work/Senior/CS 3451/P3/part-2/main/data'
+let g:netrw_dirhist_4='/Users/Jonathan/Development/Ruby/Rails/omelet-ui'
+let g:netrw_dirhist_5='/Users/Jonathan/Development/Ruby/Rails/omelet-example'
+let g:netrw_dirhist_6='/Users/Jonathan/Development/Ruby/Rails/omelet-ui-old'
