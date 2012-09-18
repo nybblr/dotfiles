@@ -232,9 +232,9 @@ vmap <leader>a: :Tabularize /:\zs<CR>
 nmap <leader>ag :Tabularize /=><CR>
 vmap <leader>ag :Tabularize /=><CR>
 
-map <leader>ss :ConqueTermVSplit bash<cr>
-map <leader>sh :ConqueTermSplit bash<cr>
-map <leader>sn :ConqueTermTab bash<cr>
+map <leader>ss :ConqueTermVSplit zsh<cr>
+map <leader>sh :ConqueTermSplit zsh<cr>
+map <leader>sn :ConqueTermTab zsh<cr>
 
 map <leader>sw :%s/\s\+$<cr>
 
