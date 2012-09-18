@@ -220,6 +220,7 @@ map <leader>rt :RetabIndent<cr>
 map <leader>qq :qall<cr>
 map <leader>e :SyntasticCheck<cr>
 map <leader>tt :TagbarToggle<cr>
+map <leader>vr :VimroomToggle<cr>
 
 nmap <leader>ac :Tabularize /,<cr>
 vmap <leader>ac :Tabularize /,<cr>
