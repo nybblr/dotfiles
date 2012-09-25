@@ -222,6 +222,10 @@ map <leader>e :SyntasticCheck<cr>
 map <leader>tt :TagbarToggle<cr>
 map <leader>vr :VimroomToggle<cr>
 
+" Nice quick fullscreen like iTerm2!
+" macmenu &Edit.Find.Find\.\.\. key=<nop>
+map <D-Enter> :set invfu<CR>
+
 nmap <leader>ac :Tabularize /,<cr>
 vmap <leader>ac :Tabularize /,<cr>
 nmap <leader>ap :Tabularize /\|<cr>
