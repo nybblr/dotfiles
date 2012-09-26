@@ -146,6 +146,13 @@ let NERDTreeChDirMode=2
 " Detect if a tab was closed, and ensure that height of main window fills the screen (100% height)
 au TabEnter * let &lines=200
 
+" Turn off irritating balloons
+set noballooneval
+
+" Code folding
+set foldmethod=syntax
+set nofoldenable
+
 " Control-s functionality for quick save
 " If the current buffer has never been saved, it will have no name,
 " " call the file browser to save it, otherwise just save it.

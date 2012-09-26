@@ -85,3 +85,7 @@
 [submodule ".vim/bundle/vim-yankstack"]
 	path = .vim/bundle/vim-yankstack
 	url = git://github.com/maxbrunsfeld/vim-yankstack.git
+
+[submodule ".vim/bundle/vim-ruby"]
+	path = .vim/bundle/vim-ruby
+	url = git://github.com/vim-ruby/vim-ruby.git
