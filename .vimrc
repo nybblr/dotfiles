@@ -7,19 +7,23 @@ call pathogen#infect('colors')
 call pathogen#infect('langs')
 
 if has("gui_running")
-	" colorscheme solarized
-	" set background=light
+	colorscheme solarized
+	set background=light
 
-	colorscheme railscasts
+	" colorscheme railscasts
 	set guioptions-=R
 	set guioptions-=r
 	set guioptions-=L
 	set guioptions-=l
 	set guioptions-=T
 
-	set guifont=Menlo,12
+	" set guifont=Menlo,12
+	set guifont=Source\ Code\ Pro:h13
 
 	set macmeta
+
+	" Turn off irritating balloons
+	set noballooneval
 endif
 
 if has("gui_macvim")
@@ -146,9 +150,6 @@ let NERDTreeChDirMode=2
 " Detect if a tab was closed, and ensure that height of main window fills the screen (100% height)
 au TabEnter * let &lines=200
 
-" Turn off irritating balloons
-set noballooneval
-
 " Code folding
 set foldmethod=syntax
 set nofoldenable
@@ -266,6 +267,8 @@ map <leader>gp :Git push<CR>
 " Quick theme changing
 map <leader>cd :colorscheme railscasts<cr>
 map <leader>cl :colorscheme solarized \| set background=light<cr>
+map <leader>cb :set guifont=Source\ Code\ Pro:h13<cr>
+map <leader>cs :set guifont=Menlo,12<cr>
 
 " Show extra whitespace
 highlight ExtraWhitespace ctermbg=red guibg=red
