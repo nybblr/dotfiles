@@ -150,8 +150,13 @@ let NERDTreeChDirMode=2
 " Detect if a tab was closed, and ensure that height of main window fills the screen (100% height)
 au TabEnter * let &lines=200
 
+" Exit insert mode if scrolling or focus lost
+au FocusLost,TabLeave * call feedkeys("\<C-\>\<C-n>")
+xnoremap <ScrollWheelUp> <esc><ScrollWheelUp>
+xnoremap <ScrollWheelDown> <esc><ScrollWheelDown>
+
 " Code folding
-set foldmethod=syntax
+set foldmethod=manual
 set nofoldenable
 
 " Control-s functionality for quick save
