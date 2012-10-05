@@ -1,3 +1,8 @@
+" Use Vim settings, rather than Vi settings (much better!).
+" This must be first, because it changes other options as a side effect.
+set nocompatible
+
+
 call pathogen#infect()
 
 " Pathogen support for color themes
@@ -26,29 +31,10 @@ if has("gui_running")
 	set noballooneval
 endif
 
+
 if has("gui_macvim")
 	let macvim_hig_shift_movement = 1
 endif
-
-" An example for a vimrc file.
-"
-" Maintainer:	Bram Moolenaar <Bram@vim.org>
-" Last change:	2008 Dec 17
-"
-" To use it, copy it to
-"     for Unix and OS/2:  ~/.vimrc
-"	      for Amiga:  s:.vimrc
-"  for MS-DOS and Win32:  $VIM\_vimrc
-"	    for OpenVMS:  sys$login:.vimrc
-
-" When started as "evim", evim.vim will already have done these settings.
-if v:progname =~? "evim"
-	finish
-endif
-
-" Use Vim settings, rather than Vi settings (much better!).
-" This must be first, because it changes other options as a side effect.
-set nocompatible
 
 " allow backspacing over everything in insert mode
 set backspace=indent,eol,start
@@ -159,6 +145,12 @@ xnoremap <ScrollWheelDown> <esc><ScrollWheelDown>
 set foldmethod=manual
 set nofoldenable
 
+" Sessions
+let g:session_directory='./'
+let g:session_autoload=1
+let g:session_autosave=1
+
+
 " Control-s functionality for quick save
 " If the current buffer has never been saved, it will have no name,
 " " call the file browser to save it, otherwise just save it.
@@ -202,6 +194,10 @@ map <CR> o<Esc>l
 
 " More intuitive undo
 map U :redo<cr>
+
+" Retain selection after indent
+vnoremap > >gv
+vnoremap < <gv
 
 " Leader mappings
 map <leader>tn :tabnew<cr>
@@ -250,7 +246,7 @@ vmap <leader>a: :Tabularize /:\zs<CR>
 nmap <leader>ag :Tabularize /=><CR>
 vmap <leader>ag :Tabularize /=><CR>
 
-map <leader>ss :ConqueTermVSplit zsh<cr>
+map <leader>sv :ConqueTermVSplit zsh<cr>
 map <leader>sh :ConqueTermSplit zsh<cr>
 map <leader>sn :ConqueTermTab zsh<cr>
 
@@ -268,6 +264,10 @@ map <leader>gd :Gdiff<CR>
 map <leader>gl :Glog<CR>
 map <leader>gc :Gcommit<CR>
 map <leader>gp :Git push<CR>
+
+" Sessions keymaps
+nnoremap <leader>ss :SaveSession<cr>
+nnoremap <leader>ls :OpenSession<cr>
 
 " Quick theme changing
 map <leader>cd :colorscheme railscasts<cr>
