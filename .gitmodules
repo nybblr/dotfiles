@@ -67,12 +67,12 @@
 [submodule ".vim/bundle/vim-ruby"]
 	path = .vim/bundle/vim-ruby
 	url = git://github.com/vim-ruby/vim-ruby.git
-[submodule ".oh-my-zsh"]
-	path = .oh-my-zsh
-	url = git@github.com:nybblr/oh-my-zsh
 [submodule ".vim/bundle/vim-session"]
 	path = .vim/bundle/vim-session
 	url = git://github.com/xolox/vim-session.git
 [submodule ".vim/bundle/vim-nerdtree-tabs"]
 	path = .vim/bundle/vim-nerdtree-tabs
 	url = git://github.com/jistr/vim-nerdtree-tabs.git
+[submodule "oh-my-zsh"]
+	path = oh-my-zsh
+	url = git@github.com:nybblr/oh-my-zsh
