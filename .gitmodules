@@ -73,3 +73,6 @@
 [submodule ".vim/bundle/vim-session"]
 	path = .vim/bundle/vim-session
 	url = git://github.com/xolox/vim-session.git
+[submodule ".vim/bundle/vim-nerdtree-tabs"]
+	path = .vim/bundle/vim-nerdtree-tabs
+	url = git://github.com/jistr/vim-nerdtree-tabs.git
