@@ -147,8 +147,17 @@ set nofoldenable
 
 " Sessions
 let g:session_directory='./'
-let g:session_autoload=1
-let g:session_autosave=1
+let g:session_autoload="yes"
+let g:session_autosave="yes"
+
+" vim-session autoload isn't working?!
+" Remove once it is fixed!
+function! RestoreSession()
+	if argc() == 0 && filereadable(g:session_directory . "default.vim") " vim called without arguments
+		execute 'OpenSession'
+	end
+endfunction
+au VimEnter * nested :call RestoreSession()
 
 
 " Control-s functionality for quick save
