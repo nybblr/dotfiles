@@ -1,7 +1,7 @@
 " Use Vim settings, rather than Vi settings (much better!).
 " This must be first, because it changes other options as a side effect.
 set nocompatible
-
+set encoding=utf-8
 
 call pathogen#infect()
 
@@ -23,7 +23,7 @@ if has("gui_running")
 	set guioptions-=T
 
 	" set guifont=Menlo,12
-	set guifont=Source\ Code\ Pro:h13
+	set guifont=Source\ Code\ Pro\ for\ Powerline:h13
 
 	set macmeta
 
@@ -144,6 +144,9 @@ xnoremap <ScrollWheelDown> <esc><ScrollWheelDown>
 " Code folding
 set foldmethod=manual
 set nofoldenable
+
+" Fancy status lines
+let g:Powerline_symbols='fancy'
 
 " Sessions
 let g:session_directory='./'

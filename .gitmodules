@@ -82,3 +82,9 @@
 [submodule "vim/bundle/sparkup"]
 	path = vim/bundle/sparkup
 	url = git://github.com/tristen/vim-sparkup.git
+[submodule "vim/bundle/vim-ruby-refactoring"]
+	path = vim/bundle/vim-ruby-refactoring
+	url = git://github.com/ecomba/vim-ruby-refactoring.git
+[submodule "vim/bundle/vim-powerline"]
+	path = vim/bundle/vim-powerline
+	url = git://github.com/Lokaltog/vim-powerline.git
