@@ -69,7 +69,7 @@
 	url = git://github.com/vim-ruby/vim-ruby.git
 [submodule "vim/bundle/vim-session"]
 	path = vim/bundle/vim-session
-	url = git://github.com/xolox/vim-session.git
+	url = git://github.com/nybblr/vim-session.git
 [submodule "vim/bundle/vim-nerdtree-tabs"]
 	path = vim/bundle/vim-nerdtree-tabs
 	url = git://github.com/jistr/vim-nerdtree-tabs.git
