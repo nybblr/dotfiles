@@ -147,6 +147,9 @@ set nofoldenable
 
 " Fancy status lines
 let g:Powerline_symbols='fancy'
+let g:Powerline_colorscheme='solarizedDevin'
+let g:Powerline_theme='devin'
+set laststatus=2 " always show status line
 
 " Sessions
 let g:session_directory='./'
