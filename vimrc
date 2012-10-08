@@ -43,6 +43,7 @@ Bundle 'tristen/vim-sparkup'
 Bundle 'ecomba/vim-ruby-refactoring'
 Bundle 'nybblr/vim-powerline'
 Bundle 'fs111/pydoc.vim'
+Bundle 'sontek/rope-vim'
 
 
 filetype plugin indent on
