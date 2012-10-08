@@ -269,8 +269,10 @@ map <leader>tp :tabprev<cr>
 map <leader>tf :tabfirst<cr>
 map <leader>tl :tablast<cr>
 
-" map <leader>to :TaskList<cr>
-map <unique> <leader>to <Plug>TaskList
+map <leader>to <Plug>TaskList
+
+" Quick command mode trigger
+nmap <space> :
 
 " For mac users (using the 'apple' key)
 map <D-]> gt
