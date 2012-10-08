@@ -45,6 +45,7 @@ Bundle 'nybblr/vim-powerline'
 Bundle 'fs111/pydoc.vim'
 Bundle 'sontek/rope-vim'
 Bundle 'vim-scripts/TaskList.vim'
+Bundle 'vim-scripts/MatlabFilesEdition'
 
 
 filetype plugin indent on
