@@ -44,6 +44,7 @@ Bundle 'ecomba/vim-ruby-refactoring'
 Bundle 'nybblr/vim-powerline'
 Bundle 'fs111/pydoc.vim'
 Bundle 'sontek/rope-vim'
+Bundle 'vim-scripts/TaskList.vim'
 
 
 filetype plugin indent on
@@ -259,13 +260,16 @@ map U :redo<cr>
 vnoremap > >gv
 vnoremap < <gv
 
-" Leader mappings
+" Tab mappings
 map <leader>tn :tabnew<cr>
 map <leader>tc :tabclose<cr>
 map <leader>tx :tabnext<cr>
 map <leader>tp :tabprev<cr>
 map <leader>tf :tabfirst<cr>
 map <leader>tl :tablast<cr>
+
+" map <leader>to :TaskList<cr>
+map <unique> <leader>to <Plug>TaskList
 
 " For mac users (using the 'apple' key)
 map <D-]> gt
