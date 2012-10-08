@@ -1,15 +1,57 @@
-" Use Vim settings, rather than Vi settings (much better!).
-" This must be first, because it changes other options as a side effect.
+" Use Vim settings/features
 set nocompatible
 set encoding=utf-8
 
-call pathogen#infect()
+" Vundle
+filetype off
 
-" Pathogen support for color themes
-call pathogen#infect('colors')
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
 
-" Pathogen support for languages
-call pathogen#infect('langs')
+" let Vundle manage Vundle
+Bundle 'gmarik/vundle'
+
+filetype plugin indent on
+
+""""" BUNDLES """""
+Bundle 'mileszs/ack.vim'
+Bundle 'wincent/Command-T'
+Bundle 'scrooloose/nerdtree'
+Bundle 'msanders/snipmate.vim'
+Bundle 'scrooloose/syntastic'
+Bundle 'majutsushi/tagbar'
+Bundle 'tomtom/tcomment_vim'
+Bundle 'tpope/vim-fugitive'
+Bundle 'tpope/vim-haml'
+Bundle 'tpope/vim-rails'
+Bundle 'godlygeek/tabular'
+Bundle 'Raimondi/delimitMate'
+Bundle 'vim-scripts/AutoComplPop'
+Bundle 'mikewest/vimroom'
+Bundle 'altercation/vim-colors-solarized'
+Bundle 'Beakr/sunset-vim'
+Bundle 'Lokaltog/vim-easymotion'
+Bundle 'scrooloose/snipmate-snippets'
+Bundle 'skwp/vim-ruby-conque'
+Bundle 'tpope/vim-repeat'
+Bundle 'tpope/vim-surround'
+Bundle 'maxbrunsfeld/vim-yankstack'
+Bundle 'vim-ruby/vim-ruby'
+Bundle 'nybblr/vim-session'
+Bundle 'jistr/vim-nerdtree-tabs'
+Bundle 'vim-scripts/Conque-Shell'
+Bundle 'tristen/vim-sparkup'
+Bundle 'ecomba/vim-ruby-refactoring'
+Bundle 'nybblr/vim-powerline'
+
+""""" PATHOGEN """""
+" call pathogen#infect()
+" 
+" " Pathogen support for color themes
+" call pathogen#infect('colors')
+" 
+" " Pathogen support for languages
+" call pathogen#infect('langs')
 
 if has("gui_running")
 	colorscheme solarized
