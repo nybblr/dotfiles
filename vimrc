@@ -11,7 +11,6 @@ call vundle#rc()
 " let Vundle manage Vundle
 Bundle 'gmarik/vundle'
 
-filetype plugin indent on
 
 """"" BUNDLES """""
 Bundle 'mileszs/ack.vim'
@@ -43,15 +42,11 @@ Bundle 'vim-scripts/Conque-Shell'
 Bundle 'tristen/vim-sparkup'
 Bundle 'ecomba/vim-ruby-refactoring'
 Bundle 'nybblr/vim-powerline'
+Bundle 'fs111/pydoc.vim'
 
-""""" PATHOGEN """""
-" call pathogen#infect()
-" 
-" " Pathogen support for color themes
-" call pathogen#infect('colors')
-" 
-" " Pathogen support for languages
-" call pathogen#infect('langs')
+
+filetype plugin indent on
+
 
 if has("gui_running")
 	colorscheme solarized
@@ -91,8 +86,6 @@ set ruler		" show the cursor position all the time
 set showcmd		" display incomplete commands
 set incsearch		" do incremental searching
 
-" For Win32 GUI: remove 't' flag from 'guioptions': no tearoff menu entries
-" let &guioptions = substitute(&guioptions, "t", "", "g")
 
 " Don't use Ex mode, use Q for formatting
 map Q gq
@@ -120,14 +113,14 @@ if has("autocmd")
 	" Use the default filetype settings, so that mail gets 'tw' set to 72,
 	" 'cindent' is on in C files, etc.
 	" Also load indent files, to automatically do language-dependent indenting.
-	filetype plugin indent on
+	" filetype plugin indent on
 
 	" Put these in an autocmd group, so that we can delete them easily.
 	augroup vimrcEx
 	au!
 
 	" For all text files set 'textwidth' to 78 characters.
-	autocmd FileType text setlocal textwidth=78
+	" autocmd FileType text setlocal textwidth=78
 
 	" When editing a file, always jump to the last known cursor position.
 	" Don't do it when the position is invalid or when inside an event handler
@@ -167,7 +160,7 @@ set undodir=~/.vim-tmp//,/var/tmp//,/tmp//,.
 
 autocmd User Rails set noexpandtab
 
-autocmd vimenter * if !argc() | NERDTree | endif
+" autocmd vimenter * if !argc() | NERDTree | endif
 
 set timeoutlen=300
 
@@ -183,6 +176,9 @@ au FocusLost,TabLeave * call feedkeys("\<C-\>\<C-n>")
 xnoremap <ScrollWheelUp> <esc><ScrollWheelUp>
 xnoremap <ScrollWheelDown> <esc><ScrollWheelDown>
 
+" Clear search results on esc
+nnoremap <esc> :noh<cr><esc>
+
 " Code folding
 set foldmethod=manual
 set nofoldenable
@@ -195,8 +191,8 @@ set laststatus=2 " always show status line
 
 " Sessions
 let g:session_directory='./'
-let g:session_autoload="yes"
-let g:session_autosave="yes"
+let g:session_autoload='yes'
+let g:session_autosave='yes'
 
 " vim-session autoload isn't working?!
 " Remove once it is fixed!
@@ -206,6 +202,12 @@ function! RestoreSession()
 	end
 endfunction
 au VimEnter * nested :call RestoreSession()
+
+
+" Paste mode toggle for CLI version
+nnoremap <F2> :set invpaste paste?<CR>
+set pastetoggle=<F2>
+set showmode
 
 
 " Control-s functionality for quick save
@@ -372,9 +374,3 @@ endfunction
 command! -nargs=? -range=% Space2Tab call IndentConvert(<line1>,<line2>,0,<q-args>)
 command! -nargs=? -range=% Tab2Space call IndentConvert(<line1>,<line2>,1,<q-args>)
 command! -nargs=? -range=% RetabIndent call IndentConvert(<line1>,<line2>,&et,<q-args>)
-
-
-
-nnoremap <F2> :set invpaste paste?<CR>
-set pastetoggle=<F2>
-set showmode
