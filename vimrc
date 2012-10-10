@@ -46,6 +46,7 @@ Bundle 'fs111/pydoc.vim'
 Bundle 'sontek/rope-vim'
 Bundle 'vim-scripts/TaskList.vim'
 Bundle 'vim-scripts/MatlabFilesEdition'
+Bundle 'sjl/splice.vim'
 
 
 filetype plugin indent on
@@ -275,8 +276,14 @@ map <leader>tp :tabprev<cr>
 map <leader>tf :tabfirst<cr>
 map <leader>tl :tablast<cr>
 
-" map <leader>to :TaskList<cr>
-map <unique> <leader>to <Plug>TaskList
+map <leader>to <Plug>TaskList
+
+" Quick command mode trigger
+nmap <space> :
+
+" Super quick escape in insert mode
+" Somewhat inconsistent behavior though
+" imap jj <esc>
 
 " For mac users (using the 'apple' key)
 map <D-]> gt
