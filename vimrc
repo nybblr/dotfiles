@@ -219,6 +219,11 @@ nnoremap <F2> :set invpaste paste?<CR>
 set pastetoggle=<F2>
 set showmode
 
+" Smart case detection, global default
+set ignorecase
+set smartcase
+set gdefault
+
 
 " Control-s functionality for quick save
 " If the current buffer has never been saved, it will have no name,
@@ -268,6 +273,10 @@ map U :redo<cr>
 vnoremap > >gv
 vnoremap < <gv
 
+" Sane Regex
+nnoremap / /\v
+vnoremap / /\v
+
 " Tab mappings
 map <leader>tn :tabnew<cr>
 map <leader>tc :tabclose<cr>
@@ -281,9 +290,13 @@ map <leader>to <Plug>TaskList
 " Quick command mode trigger
 nmap <space> :
 
+" Easy to reach esc
+" nmap <space> <esc>
+" vmap <space> <esc>
+
 " Super quick escape in insert mode
 " Somewhat inconsistent behavior though
-" imap jj <esc>
+imap jj <esc>
 
 " For mac users (using the 'apple' key)
 map <D-]> gt
@@ -304,6 +317,8 @@ map <leader>nf :NERDTreeFind<cr>
 map <leader>rc :edit ~/.vimrc<cr>
 map <leader>rv :so $MYVIMRC<cr>
 map <leader>rt :RetabIndent<cr>
+map <leader>et :Space2Tab<cr>
+map <leader>dt :Tab2Space<cr>
 map <leader>qq :qall<cr>
 map <leader>e :SyntasticCheck<cr>
 map <leader>tt :TagbarToggle<cr>
