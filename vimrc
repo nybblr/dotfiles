@@ -51,6 +51,12 @@ Bundle 'vim-scripts/MatlabFilesEdition'
 filetype plugin indent on
 
 
+
+
+" Turn off modeline; vulnerability
+set modelines=0
+set nomodeline
+
 if has("gui_running")
 	colorscheme solarized
 	set background=light
