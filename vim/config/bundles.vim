@@ -1,35 +1,60 @@
-Bundle 'mileszs/ack.vim'
-Bundle 'wincent/Command-T'
-Bundle 'scrooloose/nerdtree'
-Bundle 'msanders/snipmate.vim'
-Bundle 'scrooloose/syntastic'
-Bundle 'majutsushi/tagbar'
-Bundle 'tomtom/tcomment_vim'
-Bundle 'tpope/vim-fugitive'
-Bundle 'tpope/vim-haml'
-Bundle 'tpope/vim-rails'
-Bundle 'godlygeek/tabular'
-Bundle 'Raimondi/delimitMate'
-Bundle 'vim-scripts/AutoComplPop'
-Bundle 'mikewest/vimroom'
-Bundle 'altercation/vim-colors-solarized'
-Bundle 'Beakr/sunset-vim'
-Bundle 'Lokaltog/vim-easymotion'
-Bundle 'scrooloose/snipmate-snippets'
-Bundle 'skwp/vim-ruby-conque'
-Bundle 'tpope/vim-repeat'
-Bundle 'tpope/vim-surround'
+" System
 Bundle 'maxbrunsfeld/vim-yankstack'
-Bundle 'vim-ruby/vim-ruby'
 Bundle 'nybblr/vim-session'
-Bundle 'nybblr/vim-nerdtree-tabs'
-Bundle 'vim-scripts/Conque-Shell'
+
+" Syntax
+Bundle 'vim-ruby/vim-ruby'
+Bundle 'tpope/vim-rails'
+Bundle 'tpope/vim-haml'
+Bundle 'vim-scripts/MatlabFilesEdition'
+
 Bundle 'tristen/vim-sparkup'
-Bundle 'ecomba/vim-ruby-refactoring'
-Bundle 'nybblr/vim-powerline'
+
+" Python
 Bundle 'fs111/pydoc.vim'
 Bundle 'sontek/rope-vim'
-Bundle 'vim-scripts/TaskList.vim'
-Bundle 'vim-scripts/MatlabFilesEdition'
-Bundle 'sjl/splice.vim'
+
+" Command Line Mode
+Bundle 'mileszs/ack.vim'
 Bundle 'tpope/vim-eunuch'
+
+Bundle 'vim-scripts/Conque-Shell'
+Bundle 'skwp/vim-ruby-conque'
+
+" Code Semantics
+Bundle 'vim-scripts/AutoComplPop'
+Bundle 'scrooloose/syntastic'
+Bundle 'majutsushi/tagbar'
+Bundle 'ecomba/vim-ruby-refactoring'
+
+" SCC
+Bundle 'tpope/vim-fugitive'
+Bundle 'sjl/splice.vim'
+
+" Motions
+Bundle 'Lokaltog/vim-easymotion'
+Bundle 'tpope/vim-repeat'
+Bundle 'tpope/vim-surround'
+Bundle 'godlygeek/tabular'
+Bundle 'tomtom/tcomment_vim'
+
+" Navigation
+Bundle 'wincent/Command-T'
+Bundle 'scrooloose/nerdtree'
+Bundle 'nybblr/vim-nerdtree-tabs'
+
+" Project Management
+Bundle 'vim-scripts/TaskList.vim'
+
+" Snippets
+Bundle 'msanders/snipmate.vim'
+Bundle 'scrooloose/snipmate-snippets'
+Bundle 'Raimondi/delimitMate'
+
+" Good Looks
+Bundle 'nybblr/vim-powerline'
+Bundle 'mikewest/vimroom'
+
+" Colorschemes
+Bundle 'altercation/vim-colors-solarized'
+Bundle 'Beakr/sunset-vim'
