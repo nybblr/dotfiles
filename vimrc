@@ -2,7 +2,7 @@
 set nocompatible
 set encoding=utf-8
 
-" Vundle
+""""" START Vundle """""
 filetype off
 
 set rtp+=~/.vim/bundle/vundle/
@@ -11,46 +11,11 @@ call vundle#rc()
 " let Vundle manage Vundle
 Bundle 'gmarik/vundle'
 
-
-""""" BUNDLES """""
-Bundle 'mileszs/ack.vim'
-Bundle 'wincent/Command-T'
-Bundle 'scrooloose/nerdtree'
-Bundle 'msanders/snipmate.vim'
-Bundle 'scrooloose/syntastic'
-Bundle 'majutsushi/tagbar'
-Bundle 'tomtom/tcomment_vim'
-Bundle 'tpope/vim-fugitive'
-Bundle 'tpope/vim-haml'
-Bundle 'tpope/vim-rails'
-Bundle 'godlygeek/tabular'
-Bundle 'Raimondi/delimitMate'
-Bundle 'vim-scripts/AutoComplPop'
-Bundle 'mikewest/vimroom'
-Bundle 'altercation/vim-colors-solarized'
-Bundle 'Beakr/sunset-vim'
-Bundle 'Lokaltog/vim-easymotion'
-Bundle 'scrooloose/snipmate-snippets'
-Bundle 'skwp/vim-ruby-conque'
-Bundle 'tpope/vim-repeat'
-Bundle 'tpope/vim-surround'
-Bundle 'maxbrunsfeld/vim-yankstack'
-Bundle 'vim-ruby/vim-ruby'
-Bundle 'nybblr/vim-session'
-Bundle 'nybblr/vim-nerdtree-tabs'
-Bundle 'vim-scripts/Conque-Shell'
-Bundle 'tristen/vim-sparkup'
-Bundle 'ecomba/vim-ruby-refactoring'
-Bundle 'nybblr/vim-powerline'
-Bundle 'fs111/pydoc.vim'
-Bundle 'sontek/rope-vim'
-Bundle 'vim-scripts/TaskList.vim'
-Bundle 'vim-scripts/MatlabFilesEdition'
-Bundle 'sjl/splice.vim'
-
+" Bundles
+source vim/config/bundles.vim
 
 filetype plugin indent on
-
+""""" END Vundle """""
 
 
 
