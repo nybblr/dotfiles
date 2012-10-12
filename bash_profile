@@ -1,5 +1,7 @@
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm" # Load RVM function
 
+export PATH=$PATH:$HOME/.bin
+
 # Set language (Lion bug)
 export LANG=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
