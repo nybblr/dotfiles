@@ -28,7 +28,33 @@ endif
 
 
 if has("gui_macvim")
-	let macvim_hig_shift_movement = 1
+	" This gets irritating with select mode. Manually set.
+	" let macvim_hig_shift_movement = 1
+
+	set keymodel=startsel,stopsel
+
+	" HIG related shift + special movement key mappings
+	nn   <S-D-Left>     <S-Home>
+	vn   <S-D-Left>     <S-Home>
+	ino  <S-D-Left>     <S-Home>
+	nn   <S-M-Left>     <S-C-Left>
+	vn   <S-M-Left>     <S-C-Left>
+	ino  <S-M-Left>     <S-C-Left>
+
+	nn   <S-D-Right>    <S-End>
+	vn   <S-D-Right>    <S-End>
+	ino  <S-D-Right>    <S-End>
+	nn   <S-M-Right>    <S-C-Right>
+	vn   <S-M-Right>    <S-C-Right>
+	ino  <S-M-Right>    <S-C-Right>
+
+	nn   <S-D-Up>       <S-C-Home>
+	vn   <S-D-Up>       <S-C-Home>
+	ino  <S-D-Up>       <S-C-Home>
+
+	nn   <S-D-Down>     <S-C-End>
+	vn   <S-D-Down>     <S-C-End>
+	ino  <S-D-Down>     <S-C-End>
 endif
 
 

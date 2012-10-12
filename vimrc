@@ -57,7 +57,8 @@ set nofoldenable
 " We always want the status line
 set laststatus=2
 
-
+" Disable selection mode. Who cares that I used the mouse?
+set selectmode=""
 
 
 " For all text files set 'textwidth' to 78 characters.
