@@ -95,6 +95,9 @@ endif
 let NERDTreeMouseMode=2
 let NERDTreeChDirMode=2
 
+" Store bookmarks in .vim/
+let NERDTreeBookmarksFile="~/.vim/.bookmarks"
+
 " Detect if a tab was closed, and ensure that height of main window fills the screen (100% height)
 au TabEnter * let &lines=200
 
