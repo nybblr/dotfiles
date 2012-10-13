@@ -1,6 +1,6 @@
 " System
 Bundle 'maxbrunsfeld/vim-yankstack'
-Bundle 'nybblr/vim-session'
+Bundle 'git@github.com:nybblr/vim-session'
 
 " Syntax
 Bundle 'vim-ruby/vim-ruby'
@@ -41,7 +41,7 @@ Bundle 'tomtom/tcomment_vim'
 " Navigation
 Bundle 'wincent/Command-T'
 Bundle 'scrooloose/nerdtree'
-Bundle 'nybblr/vim-nerdtree-tabs'
+Bundle 'git@github.com:nybblr/vim-nerdtree-tabs'
 
 " Project Management
 Bundle 'vim-scripts/TaskList.vim'
@@ -52,7 +52,7 @@ Bundle 'scrooloose/snipmate-snippets'
 Bundle 'Raimondi/delimitMate'
 
 " Good Looks
-Bundle 'nybblr/vim-powerline'
+Bundle 'git@github.com:nybblr/vim-powerline'
 Bundle 'mikewest/vimroom'
 
 " Colorschemes
