@@ -30,6 +30,7 @@ set incsearch
 set tabstop=2
 set shiftwidth=2
 set noexpandtab
+autocmd User Rails set noexpandtab
 
 " Show number lines
 set number
@@ -86,8 +87,6 @@ if !exists(":DiffOrig")
 			\ | wincmd p | diffthis
 endif
 
-
-" autocmd User Rails set noexpandtab
 
 " autocmd vimenter * if !argc() | NERDTree | endif
 
