@@ -77,6 +77,7 @@ map <leader>to <Plug>TaskList
 
 " Quick command mode trigger
 nmap <space> :
+vmap <space> :
 
 " Easy to reach esc
 " nmap <space> <esc>
@@ -104,9 +105,6 @@ map <leader>nt :NERDTreeToggle<cr>
 map <leader>nf :NERDTreeFind<cr>
 map <leader>rc :edit ~/.vimrc<cr>
 map <leader>rv :so $MYVIMRC<cr>
-map <leader>rt :RetabIndent<cr>
-map <leader>et :Space2Tab<cr>
-map <leader>dt :Tab2Space<cr>
 map <leader>qq :qall<cr>
 map <leader>e :SyntasticCheck<cr>
 map <leader>tt :TagbarToggle<cr>
@@ -122,6 +120,8 @@ nmap <leader>ap :Tabularize /\|<cr>
 vmap <leader>ap :Tabularize /\|<cr>
 nmap <leader>a= :Tabularize /=<CR>
 vmap <leader>a= :Tabularize /=<CR>
+nmap <leader>a# :Tabularize /#<CR>
+vmap <leader>a# :Tabularize /#<CR>
 nmap <leader>a: :Tabularize /:\zs<CR>
 vmap <leader>a: :Tabularize /:\zs<CR>
 nmap <leader>ag :Tabularize /=><CR>
@@ -133,8 +133,11 @@ map <leader>sn :ConqueTermTab zsh<cr>
 
 map <leader>sw :%s/\s\+$<cr>
 
-map <leader>ts :Tab2Space<cr>
+map <leader>rt :RetabIndent<cr>
+map <leader>et :Space2Tab<cr>
+map <leader>dt :Tab2Space<cr>
 map <leader>st :Space2Tab<cr>
+map <leader>ts :Tab2Space<cr>
 
 map <leader>c :TComment<cr>
 map <leader>cc :TCommentInline<cr>
