@@ -120,8 +120,8 @@ nmap <leader>ap :Tabularize /\|<cr>
 vmap <leader>ap :Tabularize /\|<cr>
 nmap <leader>a= :Tabularize /=<CR>
 vmap <leader>a= :Tabularize /=<CR>
-nmap <leader>a# :Tabularize /#<CR>
-vmap <leader>a# :Tabularize /#<CR>
+nmap <leader>ah :Tabularize /#<CR>
+vmap <leader>ah :Tabularize /#<CR>
 nmap <leader>a: :Tabularize /:\zs<CR>
 vmap <leader>a: :Tabularize /:\zs<CR>
 nmap <leader>ag :Tabularize /=><CR>
