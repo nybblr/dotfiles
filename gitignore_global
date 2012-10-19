@@ -17,6 +17,9 @@
 # Ignore lockdown for gems
 Gemfile.lock
 
+# Ignore any lock file!
+*.lock
+
 # Ignore vim files
 *~
 *.swp
