@@ -25,6 +25,7 @@ Bundle 'skwp/vim-ruby-conque'
 Bundle 'vim-scripts/AutoComplPop'
 Bundle 'scrooloose/syntastic'
 Bundle 'majutsushi/tagbar'
+Bundle 'nathanaelkane/vim-indent-guides'
 Bundle 'ecomba/vim-ruby-refactoring'
 
 " SCC
@@ -58,3 +59,4 @@ Bundle 'mikewest/vimroom'
 " Colorschemes
 Bundle 'altercation/vim-colors-solarized'
 Bundle 'Beakr/sunset-vim'
+Bundle 'nanotech/jellybeans.vim'

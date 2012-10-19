@@ -102,7 +102,7 @@ let NERDTreeBookmarksFile="~/.vim/.bookmarks"
 au TabEnter * let &lines=200
 
 " Exit insert mode if scrolling or focus lost
-au FocusLost,TabLeave * call feedkeys("\<C-\>\<C-n>")
+" au FocusLost,TabLeave * call feedkeys("\<C-\>\<C-n>")
 xnoremap <ScrollWheelUp> <esc><ScrollWheelUp>
 xnoremap <ScrollWheelDown> <esc><ScrollWheelDown>
 
