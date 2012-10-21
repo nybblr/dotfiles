@@ -101,6 +101,10 @@ map <D-8> 8gt
 map <D-9> 9gt
 map <D-0> :tablast<cr>
 
+" Scroll mappings (mvim disabled in gvimrc)
+map <D-k> <c-e>
+map <D-l> <c-y>
+
 map <leader>nt :NERDTreeToggle<cr>
 map <leader>nf :NERDTreeFind<cr>
 map <leader>rc :edit ~/.vimrc<cr>
