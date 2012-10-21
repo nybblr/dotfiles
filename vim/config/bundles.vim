@@ -6,6 +6,7 @@ Bundle 'git@github.com:nybblr/vim-session'
 Bundle 'vim-ruby/vim-ruby'
 Bundle 'tpope/vim-rails'
 Bundle 'tpope/vim-haml'
+Bundle 'kchmck/vim-coffee-script'
 Bundle 'vim-scripts/MatlabFilesEdition'
 
 Bundle 'tristen/vim-sparkup'
