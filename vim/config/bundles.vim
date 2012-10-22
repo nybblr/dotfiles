@@ -8,6 +8,7 @@ Bundle 'tpope/vim-rails'
 Bundle 'tpope/vim-haml'
 Bundle 'kchmck/vim-coffee-script'
 Bundle 'vim-scripts/MatlabFilesEdition'
+Bundle 'sophacles/vim-processing'
 
 Bundle 'tristen/vim-sparkup'
 
