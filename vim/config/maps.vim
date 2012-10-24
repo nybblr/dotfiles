@@ -140,8 +140,12 @@ map <leader>nt :NERDTreeToggle<cr>
 map <leader>nf :NERDTreeFind<cr>
 map <leader>rc :edit ~/.vimrc<cr>
 map <leader>rv :so $MYVIMRC <bar> so ~/.gvimrc<cr>
+
+" Quick easy exits
 map <leader>qq :qall<cr>
 map <leader>qq1 :qall!<cr>
+map <leader>q1 :q!<cr>
+
 map <leader>e :SyntasticCheck<cr>
 map <leader>tt :TagbarToggle<cr>
 map <leader>vr :VimroomToggle<cr>
