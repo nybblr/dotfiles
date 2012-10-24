@@ -7,6 +7,7 @@ Bundle 'vim-ruby/vim-ruby'
 Bundle 'tpope/vim-rails'
 Bundle 'tpope/vim-haml'
 Bundle 'kchmck/vim-coffee-script'
+Bundle 'git@github.com:nybblr/vim-markdown'
 Bundle 'vim-scripts/MatlabFilesEdition'
 Bundle 'sophacles/vim-processing'
 
