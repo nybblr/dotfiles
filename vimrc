@@ -117,6 +117,11 @@ let g:session_directory='./'
 let g:session_autoload='yes'
 let g:session_autosave='yes'
 
+" Indent guides
+let g:indent_guides_enable_on_vim_startup=0 "enable on startup
+let g:indent_guides_start_level=2
+let g:indent_guides_guide_size=1
+
 " vim-session autoload isn't working?!
 " Remove once it is fixed!
 function! RestoreSession()
