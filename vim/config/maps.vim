@@ -32,14 +32,14 @@ noremap ; l
 " nnoremap <esc> :noh<cr><esc>
 " nnoremap <silent> <esc> :let @/=""<cr><esc>
 " nnoremap <silent> <esc> :if !empty(@/) <bar> let @/="" <bar> else <bar> call feedkeys("\<esc\>") <bar> endif<cr>
-nnoremap <silent> <esc> :call ClearSearchOrEsc()<cr>
-function! ClearSearchOrEsc()
-	if !empty(@/)
-		let @/=""
-	else
-		call feedkeys("esc")
-	endif
-endfunction
+" nnoremap <silent> <esc> :call ClearSearchOrEsc()<cr>
+" function! ClearSearchOrEsc()
+" 	if !empty(@/)
+" 		let @/=""
+" 	else
+" 		call feedkeys("esc")
+" 	endif
+" endfunction
 
 " Quick window switching
 nmap <silent> <C-h> :wincmd h<cr>
