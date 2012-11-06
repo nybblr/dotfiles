@@ -167,6 +167,9 @@ vmap <leader>a: :Tabularize /:\zs<cr>
 nmap <leader>ag :Tabularize /=><cr>
 vmap <leader>ag :Tabularize /=><cr>
 
+" Convert to unix file
+nmap <leader>ff :set ff=unix<cr>
+
 map <leader>sv :ConqueTermVSplit zsh<cr>
 map <leader>sh :ConqueTermSplit zsh<cr>
 map <leader>sn :ConqueTermTab zsh<cr>
