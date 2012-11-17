@@ -51,10 +51,6 @@ set smartcase
 set gdefault
 
 
-" No balloons! They slow vim waaay down
-set noballooneval
-
-
 " Code folding
 set foldmethod=manual
 set nofoldenable
