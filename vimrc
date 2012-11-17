@@ -65,6 +65,9 @@ set laststatus=2
 " Disable selection mode. Who cares that I used the mouse?
 set selectmode=""
 
+" Autocomplete for menu
+set wildmenu
+
 
 " For all text files set 'textwidth' to 78 characters.
 " autocmd FileType text setlocal textwidth=78
