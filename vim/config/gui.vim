@@ -16,6 +16,7 @@ if has("gui_running")
 
 	" Turn off irritating balloons
 	set noballooneval
+	autocmd FileType ruby setlocal noballooneval
 endif
 
 
