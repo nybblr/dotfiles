@@ -11,7 +11,7 @@ cd ~
 
 dir=.dotfiles                    # dotfiles directory
 olddir=.dotfiles_old             # old dotfiles backup directory
-files="bash_profile gemrc vimrc gvimrc vim zshrc oh-my-zsh gitignore_global gitconfig"    # list of files/folders to symlink in homedir
+files="bash_profile gemrc vimrc gvimrc vim zshrc oh-my-zsh gitignore_global gitconfig tmux.conf"    # list of files/folders to symlink in homedir
 
 ##########
 
