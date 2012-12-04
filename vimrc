@@ -92,6 +92,7 @@ endif
 
 
 " autocmd vimenter * if !argc() | NERDTree | endif
+au BufNewFile,BufRead *.frag,*.vert,*.fp,*.vp,*.glsl set filetype=glsl
 
 
 " Allow single click for NERDTree, but use double-click for files
