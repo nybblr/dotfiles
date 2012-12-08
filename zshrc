@@ -40,3 +40,12 @@ source $ZSH/oh-my-zsh.sh
 # Customize to your needs...
 
 growl() { echo -e $'\e]9;'${1}'\007' ; return ; }
+
+# Bookmarks!
+# touch ~/.zshmarks && source ~/.zshmarks
+# function b() {
+# 	echo "hash -d $1=\"`pwd`\"" >> ~/.zshmarks && source ~/.zshmarks
+# }
+
+# Autojump
+[[ -s `brew --prefix`/etc/autojump.sh ]] && . `brew --prefix`/etc/autojump.sh
