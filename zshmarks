@@ -6,3 +6,5 @@ quibble: ~dev/Rails/quibble
 photos: ~dev/Rails/photos
 orange: ~dev/Rails/orangescale
 dotfiles: ~/.dotfiles
+
+class: ~/Documents/Classwork

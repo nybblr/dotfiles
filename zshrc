@@ -78,7 +78,7 @@ load_zshmarks() {
 }
 
 function b() {
-	echo "$1: \"`pwd`\"" >> ~/.zshmarks && load_zshmarks
+	echo "$1: `pwd`" >> ~/.zshmarks && load_zshmarks
 }
 
 load_zshmarks
