@@ -11,6 +11,7 @@ Bundle 'git@github.com:nybblr/vim-markdown'
 Bundle 'vim-scripts/MatlabFilesEdition'
 Bundle 'sophacles/vim-processing'
 Bundle 'vim-scripts/glsl.vim'
+Bundle 'tpope/vim-liquid'
 
 Bundle 'tristen/vim-sparkup'
 
