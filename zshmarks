@@ -8,3 +8,4 @@ orange: ~dev/Rails/orangescale
 dotfiles: ~/.dotfiles
 
 class: ~/Documents/Classwork
+work: ~dev/Work
