@@ -39,6 +39,9 @@ source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
 
+# I am a confident typist. Don't need zsh to correct me.
+unsetopt correct_all
+
 growl() { echo -e $'\e]9;'${1}'\007' ; return ; }
 
 
