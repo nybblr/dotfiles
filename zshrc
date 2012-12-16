@@ -78,7 +78,8 @@ load_zshmarks() {
 }
 
 function b() {
-	echo "$1: `pwd`" >> ~/.zshmarks && load_zshmarks
+	# Use ZSH to expand current path with hash table
+	echo "$1: `print -P %~`" >> ~/.zshmarks && load_zshmarks
 }
 
 load_zshmarks

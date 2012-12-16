@@ -5,7 +5,7 @@ dev: ~/Development
 quibble: ~dev/Rails/quibble
 photos: ~dev/Rails/photos
 orange: ~dev/Rails/orangescale
-dotfiles: ~/.dotfiles
+dots: ~/.dotfiles
 
 class: ~/Documents/Classwork
 work: ~dev/Work
