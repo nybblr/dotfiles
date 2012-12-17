@@ -42,6 +42,14 @@ source $ZSH/oh-my-zsh.sh
 # I am a confident typist. Don't need zsh to correct me.
 unsetopt correct_all
 
+# Modular configs
+setopt nullglob
+for zconfig in ~/.zsh/*.zshrc
+do
+	source $zconfig
+done
+
+# Growl function that I'll never use
 growl() { echo -e $'\e]9;'${1}'\007' ; return ; }
 
 
@@ -92,5 +100,5 @@ load_zshmarks
 
 # Source EC2 config if it exists
 if [[ -s $HOME/.ec2/aws ]] then
-  source $HOME/.ec2/aws
+	source $HOME/.ec2/aws
 fi
