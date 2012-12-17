@@ -89,3 +89,8 @@ load_zshmarks
 
 # Autojump
 [[ -s `brew --prefix`/etc/autojump.sh ]] && . `brew --prefix`/etc/autojump.sh
+
+# Source EC2 config if it exists
+if [[ -s $HOME/.ec2/aws ]] then
+  source $HOME/.ec2/aws
+fi
