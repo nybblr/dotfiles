@@ -2,9 +2,10 @@
 ub: /usr/bin
 ulb: /usr/local/bin
 dev: ~/Development
-quibble: ~dev/Rails/quibble
-photos: ~dev/Rails/photos
-orange: ~dev/Rails/orangescale
+rad: ~dev/Rails
+quibble: ~rad/quibble
+photos: ~rad/photos
+orange: ~rad/orangescale
 dots: ~/.dotfiles
 
 class: ~/Documents/Classwork
