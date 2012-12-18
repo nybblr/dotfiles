@@ -7,6 +7,7 @@ quibble: ~rad/quibble
 photos: ~rad/photos
 orange: ~rad/orangescale
 dots: ~/.dotfiles
+chef: ~/.chef
 
 class: ~/Documents/Classwork
 work: ~dev/Work

@@ -3,4 +3,4 @@
 	url = git@github.com:nybblr/oh-my-zsh
 [submodule "chef"]
 	path = chef
-	url = git@bitbucket.org:nybblr/chef
+	url = ssh://git@bitbucket.org/nybblr/chef
