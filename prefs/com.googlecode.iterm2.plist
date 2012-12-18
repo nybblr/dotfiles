@@ -1976,7 +1976,7 @@
 	<key>NSColorPickerPageableNameListDefaults</key>
 	<string>1smlcandy</string>
 	<key>NSNavLastRootDirectory</key>
-	<string>~/.dotfiles</string>
+	<string>~/.dotfiles/prefs</string>
 	<key>NSNavPanelExpandedSizeForOpenMode</key>
 	<string>{585, 400}</string>
 	<key>NSQuotedKeystrokeBinding</key>
@@ -2005,7 +2005,7 @@
 	<key>NSWindow Frame Preferences</key>
 	<string>1066 299 924 485 0 0 2560 1418 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>0 15 1277 1403 0 0 2560 1418 </string>
+	<string>377 4 1277 1414 0 0 2560 1418 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -2720,7 +2720,7 @@
 			<key>Unlimited Scrollback</key>
 			<false/>
 			<key>Use Bold Font</key>
-			<true/>
+			<false/>
 			<key>Use Bright Bold</key>
 			<true/>
 			<key>Vertical Spacing</key>
@@ -3503,7 +3503,7 @@
 		</dict>
 	</dict>
 	<key>PrefsCustomFolder</key>
-	<string>/Users/Jonathan/.dotfiles</string>
+	<string>/Users/Jonathan/.dotfiles/prefs</string>
 	<key>PromptOnClose</key>
 	<true/>
 	<key>PromptOnQuit</key>
