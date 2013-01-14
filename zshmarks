@@ -8,6 +8,7 @@ photos: ~rad/photos
 orange: ~rad/orangescale
 dots: ~/.dotfiles
 chef: ~/.chef
+fonts: ~/Library/Fonts
 
 class: ~/Documents/Classwork
 work: ~dev/Work
