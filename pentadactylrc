@@ -1,0 +1,6 @@
+set go+=mT
+
+nmap -builtin j h
+nmap -builtin k j
+nmap -builtin l k
+nmap -builtin ; l
