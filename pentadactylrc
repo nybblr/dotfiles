@@ -1,4 +1,5 @@
 set go+=mT
+hi -a Hint font-size: 10pt !important;
 
 nmap -builtin j h
 nmap -builtin k j
