@@ -16,6 +16,9 @@ export LC_ALL=en_US.UTF-8
 export VISUAL='mvim -f'
 export EDITOR='mvim -f'
 
+# No beer can, please
+export HOMEBREW_NO_EMOJI=1
+
 # # zsh
 # alias vim="stty stop '' -ixoff ; vim"
 # # 'Frozing' tty, so after any command terminal settings will be restored
