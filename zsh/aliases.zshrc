@@ -7,6 +7,7 @@ alias gum='git commit -am'
 alias gam='git add -A && git commit -m'
 # alias gamp='gam && git push'
 alias gd='git diff'
+alias gcm='git commit -m'
 
 # CMake
 # OOS builds
