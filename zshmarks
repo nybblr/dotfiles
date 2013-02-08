@@ -2,6 +2,7 @@
 ub: /usr/bin
 ulb: /usr/local/bin
 dev: ~/Development
+unix: ~dev/UNIX
 rad: ~dev/Rails
 quibble: ~rad/quibble
 photos: ~rad/photos
