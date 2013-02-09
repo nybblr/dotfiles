@@ -47,7 +47,7 @@ Bundle 'tomtom/tcomment_vim'
 " Navigation
 Bundle 'wincent/Command-T'
 Bundle 'scrooloose/nerdtree'
-Bundle 'git@github.com:nybblr/vim-nerdtree-tabs'
+Bundle 'jistr/vim-nerdtree-tabs'
 
 " Project Management
 Bundle 'vim-scripts/TaskList.vim'
