@@ -116,11 +116,6 @@ xnoremap <ScrollWheelUp> <esc><ScrollWheelUp>
 xnoremap <ScrollWheelDown> <esc><ScrollWheelDown>
 
 
-" Fancy status lines
-let g:Powerline_symbols='fancy'
-let g:Powerline_colorscheme='solarizedDevin'
-let g:Powerline_theme='devin'
-
 " Sessions
 let g:session_directory='./'
 let g:session_autoload='yes'

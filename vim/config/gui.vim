@@ -1,3 +1,11 @@
+" Switch syntax highlighting on, when the terminal has colors
+" Also switch on highlighting the last used search pattern.
+if &t_Co > 2 || has("gui_running")
+	syntax enable
+	set hlsearch
+endif
+
+
 if has("gui_running")
 	colorscheme solarized
 	set background=light
@@ -17,14 +25,15 @@ if has("gui_running")
 	" Turn off irritating balloons
 	set noballooneval
 	autocmd FileType ruby setlocal noballooneval
-endif
 
-
-" Switch syntax highlighting on, when the terminal has colors
-" Also switch on highlighting the last used search pattern.
-if &t_Co > 2 || has("gui_running")
-	syntax on
-	set hlsearch
+	" Fancy status lines
+	let g:Powerline_symbols='fancy'
+	let g:Powerline_colorscheme='solarizedDevin'
+	let g:Powerline_theme='devin'
+else
+	let g:solarized_termcolors=256
+	set background=dark
+	colorscheme solarized
 endif
 
 
