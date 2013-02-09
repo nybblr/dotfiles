@@ -112,7 +112,7 @@ let NERDTreeChDirMode=2
 let NERDTreeBookmarksFile="~/.vim/.bookmarks"
 
 " Detect if a tab was closed, and ensure that height of main window fills the screen (100% height)
-au TabEnter * let &lines=200
+au TabEnter,TabLeave,BufDelete * let &lines=200
 
 " Exit insert mode if scrolling or focus lost
 " au FocusLost,TabLeave * call feedkeys("\<C-\>\<C-n>")
