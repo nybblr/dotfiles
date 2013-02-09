@@ -97,6 +97,7 @@ endif
 
 
 " autocmd vimenter * if !argc() | NERDTree | endif
+let g:nerdtree_tabs_open_on_console_startup=1
 
 
 " Allow single click for NERDTree, but use double-click for files
