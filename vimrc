@@ -97,7 +97,6 @@ endif
 
 
 " autocmd vimenter * if !argc() | NERDTree | endif
-au BufNewFile,BufRead *.frag,*.vert,*.fp,*.vp,*.glsl set filetype=glsl
 
 
 " Allow single click for NERDTree, but use double-click for files
@@ -135,6 +134,9 @@ function! RestoreSession()
 endfunction
 au VimEnter * nested :call RestoreSession()
 
+
+" Source file types
+exe 'source' expand('<sfile>:h') . '/.vim/config/filetypes.vim'
 
 " Source whitespace highlighter
 exe 'source' expand('<sfile>:h') . '/.vim/config/strip.vim'
