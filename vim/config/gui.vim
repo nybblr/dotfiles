@@ -34,6 +34,11 @@ else
 	let g:solarized_termcolors=256
 	set background=dark
 	colorscheme solarized
+	"
+	" Fancy status lines
+	let g:Powerline_symbols='fancy'
+	let g:Powerline_colorscheme='solarized256'
+	let g:Powerline_theme='devin'
 endif
 
 
