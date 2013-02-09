@@ -64,6 +64,10 @@ set selectmode=""
 " Autocomplete for menu
 set wildmenu
 
+" Let there be trailing whitespace!
+set list
+set listchars=tab:-»,trail:^
+
 
 " For all text files set 'textwidth' to 78 characters.
 " autocmd FileType text setlocal textwidth=78
