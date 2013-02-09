@@ -63,6 +63,5 @@ Bundle 'mikewest/vimroom'
 
 " Colorschemes
 Bundle 'altercation/vim-colors-solarized'
-Bundle 'Beakr/sunset-vim'
 Bundle 'nanotech/jellybeans.vim'
 Bundle 'git@github.com:nybblr/caffeine.vim'
