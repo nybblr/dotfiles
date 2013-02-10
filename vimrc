@@ -147,10 +147,6 @@ au VimEnter * nested :call RestoreSession()
 " Source file types
 exe 'source' expand('<sfile>:h') . '/.vim/config/filetypes.vim'
 
-" Source whitespace highlighter
-" Not needed anymore. Fix color of chars and fix sw
-" exe 'source' expand('<sfile>:h') . '/.vim/config/strip.vim'
-
 " Source helpers for tab2space
 exe 'source' expand('<sfile>:h') . '/.vim/config/tabbing.vim'
 
