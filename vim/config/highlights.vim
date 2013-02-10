@@ -1,1 +1,1 @@
-hi NonText ctermfg=7 guifg=gray
+hi NonText ctermfg=darkgray guifg=gray

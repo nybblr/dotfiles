@@ -73,9 +73,12 @@ autocmd BufWinLeave * call clearmatches()
 
 " I want to see where my cursor is
 set cursorline
-set cursorcolumn
-au WinLeave,InsertEnter * set nocursorline nocursorcolumn
-au WinEnter,InsertLeave * set cursorline cursorcolumn
+" set cursorcolumn
+au WinLeave,InsertEnter * set nocursorline
+au WinEnter,InsertLeave * set cursorline
+
+" Use absolute lines on focus leave
+au FocusLost * set number
 
 
 " For all text files set 'textwidth' to 78 characters.

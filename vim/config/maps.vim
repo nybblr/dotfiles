@@ -212,3 +212,7 @@ function! NumberToggle()
 	endif
 endfunc
 nnoremap <c-n> :call NumberToggle()<cr>
+
+" Vertical column in ^V mode
+" noremap <silent> <c-v> :set cursorcolumn<cr><c-v>
+" au InsertLeave * set nocursorcolumn
