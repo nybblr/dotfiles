@@ -174,7 +174,7 @@ map <leader>sv :ConqueTermVSplit zsh<cr>
 map <leader>sh :ConqueTermSplit zsh<cr>
 map <leader>sn :ConqueTermTab zsh<cr>
 
-map <leader>sw :%s/\s\+$<cr>
+map <leader>sw :%s/\s\+$// \| noh<cr>
 
 map <leader>rt :RetabIndent<cr>
 map <leader>et :Space2Tab<cr>

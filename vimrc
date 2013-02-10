@@ -64,9 +64,16 @@ set selectmode=""
 " Autocomplete for menu
 set wildmenu
 
+" I want to see where my cursor is
+set cursorline
+
 " Let there be trailing whitespace!
 set list
-set listchars=tab:-»,trail:^
+set listchars=tab:»-,trail:~,eol:¬
+
+" Fix memory leak issue
+autocmd BufWinLeave * call clearmatches()
+
 
 
 " For all text files set 'textwidth' to 78 characters.
@@ -141,7 +148,8 @@ au VimEnter * nested :call RestoreSession()
 exe 'source' expand('<sfile>:h') . '/.vim/config/filetypes.vim'
 
 " Source whitespace highlighter
-exe 'source' expand('<sfile>:h') . '/.vim/config/strip.vim'
+" Not needed anymore. Fix color of chars and fix sw
+" exe 'source' expand('<sfile>:h') . '/.vim/config/strip.vim'
 
 " Source helpers for tab2space
 exe 'source' expand('<sfile>:h') . '/.vim/config/tabbing.vim'
