@@ -9,6 +9,11 @@ alias gam='git add -A && git commit -m'
 alias gd='git diff'
 alias gcm='git commit -m'
 
+# git-smart aliases
+alias gsl='git smart-pull'
+alias gslg='git smart-log'
+alias gsm='git smart-merge'
+
 # CMake
 # OOS builds
 alias cmake-build='cd build && cmake .. && cd ..'
