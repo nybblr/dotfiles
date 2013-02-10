@@ -202,3 +202,13 @@ map <leader>cd :colorscheme railscasts<cr>
 map <leader>cl :colorscheme solarized \| set background=light<cr>
 map <leader>cb :set guifont=Source\ Code\ Pro:h13<cr>
 map <leader>cs :set guifont=Menlo,12<cr>
+
+" Relative line numbers
+function! NumberToggle()
+	if(&relativenumber == 1)
+		set number
+	else
+		set relativenumber
+	endif
+endfunc
+nnoremap <c-n> :call NumberToggle()<cr>

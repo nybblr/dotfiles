@@ -63,10 +63,7 @@ set selectmode=""
 
 " Autocomplete for menu
 set wildmenu
-
-" I want to see where my cursor is
-set cursorline
-
+"
 " Let there be trailing whitespace!
 set list
 set listchars=tab:»-,trail:~,eol:¬
@@ -74,6 +71,11 @@ set listchars=tab:»-,trail:~,eol:¬
 " Fix memory leak issue
 autocmd BufWinLeave * call clearmatches()
 
+" I want to see where my cursor is
+set cursorline
+set cursorcolumn
+au WinLeave,InsertEnter * set nocursorline nocursorcolumn
+au WinEnter,InsertLeave * set cursorline cursorcolumn
 
 
 " For all text files set 'textwidth' to 78 characters.
@@ -143,6 +145,9 @@ function! RestoreSession()
 endfunction
 au VimEnter * nested :call RestoreSession()
 
+
+" Source custom highlights
+exe 'source' expand('<sfile>:h') . '/.vim/config/highlights.vim'
 
 " Source file types
 exe 'source' expand('<sfile>:h') . '/.vim/config/filetypes.vim'
