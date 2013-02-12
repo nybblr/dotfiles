@@ -8,6 +8,7 @@ alias gam='git add -A && git commit -m'
 # alias gamp='gam && git push'
 alias gd='git diff'
 alias gcm='git commit -m'
+alias gptg='git push --tags'
 
 # git-smart aliases
 alias gsl='git smart-pull'
