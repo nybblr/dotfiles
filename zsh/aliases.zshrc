@@ -21,4 +21,4 @@ alias cmake-build='cd build && cmake .. && cd ..'
 alias cmake-clean='rm -rf build/*'
 
 # Processing
-alias processing='processing-java --sketch=./ --output=./tmp/ --run --force'
+alias processing='processing-java --sketch=$PWD/ --output=$PWD/tmp/ --run --force'
