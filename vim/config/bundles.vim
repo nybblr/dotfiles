@@ -9,7 +9,7 @@ Bundle 'tpope/vim-haml'
 Bundle 'kchmck/vim-coffee-script'
 Bundle 'git@github.com:nybblr/vim-markdown'
 Bundle 'vim-scripts/MatlabFilesEdition'
-Bundle 'sophacles/vim-processing'
+Bundle 'git@github.com:nybblr/vim-processing'
 Bundle 'vim-scripts/glsl.vim'
 Bundle 'tpope/vim-liquid'
 

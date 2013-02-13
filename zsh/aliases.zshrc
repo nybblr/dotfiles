@@ -19,3 +19,6 @@ alias gsm='git smart-merge'
 # OOS builds
 alias cmake-build='cd build && cmake .. && cd ..'
 alias cmake-clean='rm -rf build/*'
+
+# Processing
+alias processing='processing-java --sketch=./ --output=./tmp/ --run --force'
