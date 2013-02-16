@@ -99,8 +99,10 @@ vmap <space> :
 imap jj <esc>
 
 " For mac users (using the 'apple' key)
-map <D-]> gt
-map <D-[> gT
+map <D-]> <C-w>w
+map <D-[> <C-w>W
+map <D-}> gt
+map <D-{> gT
 map <D-1> 1gt
 map <D-2> 2gt
 map <D-3> 3gt
@@ -111,8 +113,10 @@ map <D-7> 7gt
 map <D-8> 8gt
 map <D-9> 9gt
 map <D-0> :tablast<cr>
-imap <D-]> <esc>gt
-imap <D-[> <esc>gT
+imap <D-]> <esc><C-w>w
+imap <D-[> <esc><C-w>W
+imap <D-}> <esc>gt
+imap <D-{> <esc>gT
 imap <D-1> <esc>1gt
 imap <D-2> <esc>2gt
 imap <D-3> <esc>3gt
