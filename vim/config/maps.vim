@@ -97,6 +97,7 @@ vmap <space> :
 " Super quick escape in insert mode
 " Somewhat inconsistent behavior though
 imap jj <esc>
+imap ;; <esc>
 
 " For mac users (using the 'apple' key)
 map <D-]> <C-w>w
