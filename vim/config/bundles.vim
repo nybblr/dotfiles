@@ -33,6 +33,9 @@ Bundle 'scrooloose/syntastic'
 Bundle 'majutsushi/tagbar'
 Bundle 'nathanaelkane/vim-indent-guides'
 Bundle 'ecomba/vim-ruby-refactoring'
+Bundle 'AndrewRadev/switch.vim'
+Bundle 'tpope/vim-endwise'
+Bundle 'austintaylor/vim-indentobject'
 
 " SCC
 Bundle 'tpope/vim-fugitive'

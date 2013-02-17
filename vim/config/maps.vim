@@ -99,6 +99,9 @@ vmap <space> :
 imap jj <esc>
 imap ;; <esc>
 
+" Quick switching
+nnoremap - :Switch<cr>
+
 " For mac users (using the 'apple' key)
 map <D-]> <C-w>w
 map <D-[> <C-w>W
