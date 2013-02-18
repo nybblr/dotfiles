@@ -114,7 +114,10 @@ endif
 
 " NERDTree configs
 " autocmd vimenter * if !argc() | NERDTree | endif
-let g:nerdtree_tabs_open_on_console_startup=1
+" Usually if I'm using vim, I'm editing one file
+if !argc()
+	let g:nerdtree_tabs_open_on_console_startup=1
+endif
 
 " Allow single click for NERDTree, but use double-click for files
 let NERDTreeMouseMode=2
