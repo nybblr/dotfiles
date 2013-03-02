@@ -1,7 +1,11 @@
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm" # Load RVM function
 [[ -s "$HOME/.pythonbrew/etc/bashrc" ]] && source "$HOME/.pythonbrew/etc/bashrc" # Load pythonbrew
 
+# Source my local scripts
 export PATH=$PATH:$HOME/.bin
+
+# Source NPM packages
+export PATH=$PATH:/usr/local/share/npm/bin
 
 # Set language (Lion bug)
 export LANG=en_US.UTF-8
