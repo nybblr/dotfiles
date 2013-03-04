@@ -7,6 +7,9 @@ export PATH=$PATH:$HOME/.bin
 # Source NPM packages
 export PATH=$PATH:/usr/local/share/npm/bin
 
+# Source python packages
+export PATH=$PATH:/usr/local/share/python
+
 # Set language (Lion bug)
 export LANG=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
