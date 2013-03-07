@@ -22,6 +22,7 @@ Bundle 'sontek/rope-vim'
 
 " Command Line Mode
 Bundle 'mileszs/ack.vim'
+Bundle 'rking/ag.vim'
 Bundle 'tpope/vim-eunuch'
 
 Bundle 'vim-scripts/Conque-Shell'

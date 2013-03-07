@@ -30,3 +30,6 @@ Gemfile.lock
 
 # Ignore VIM sessions
 *.vis
+
+# Ignore Python bytecode
+*.pyc
