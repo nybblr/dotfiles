@@ -28,3 +28,6 @@ alias processing='processing-java --sketch=$PWD/ --output=$PWD/tmp/ --run --forc
 alias ipy='ipython'
 alias ipq='ipython qtconsole'
 alias ipqi='ipython qtconsole --pylab=inline'
+
+# Quick web server
+alias webserver='python -m SimpleHTTPServer'
