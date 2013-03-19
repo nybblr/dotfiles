@@ -4,6 +4,7 @@ ulb: /usr/local/bin
 dev: ~/Development
 unix: ~dev/UNIX
 rad: ~dev/Rails
+rbd: ~dev/Ruby
 quibble: ~rad/quibble
 photos: ~rad/photos
 orange: ~rad/orangescale
