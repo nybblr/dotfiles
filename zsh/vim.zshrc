@@ -1,12 +1,15 @@
 # Easier command mode
 bindkey -M viins 'jj' vi-cmd-mode
 
-# Move over hjkl
-bindkey -rpM vicmd 'h'
-bindkey -rpM vicmd 'j'
-bindkey -rpM vicmd 'k'
-bindkey -rpM vicmd 'l'
-bindkey -M vicmd -s 'j' 'h'
-bindkey -M vicmd -s 'k' 'j'
-bindkey -M vicmd -s 'l' 'k'
-bindkey -M vicmd -s ';' 'l'
+### Move over hjkl
+# Unbind current keys
+bindkey -rM vicmd 'h'
+bindkey -rM vicmd 'j'
+bindkey -rM vicmd 'k'
+bindkey -rM vicmd 'l'
+
+# Bind new keys
+bindkey -M vicmd 'j' vi-backward-char
+bindkey -M vicmd ';' vi-forward-char
+bindkey -M vicmd 'k' vi-down-line-or-history
+bindkey -M vicmd 'l' vi-up-line-or-history
