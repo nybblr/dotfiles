@@ -17,6 +17,9 @@ alias gsl='git smart-pull'
 alias gslg='git smart-log'
 alias gsm='git smart-merge'
 
+# Middleman
+alias mbd='middleman build --clean && middleman deploy --clean'
+
 # CMake
 # OOS builds
 alias cmake-build='cd build && cmake .. && cd ..'
