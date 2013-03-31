@@ -1,5 +1,6 @@
 # Informative ls
 alias la='ls -la'
+alias lah='ls -lah'
 
 # Git aliases
 alias s='git status'
@@ -23,7 +24,7 @@ alias mmb='middleman build --clean'
 alias mmd='middleman deploy --clean'
 
 # Any build for any language
-alias cbd ='rm -r build/*'
+alias cbd='rm -r build/*'
 
 # CMake
 # OOS builds
