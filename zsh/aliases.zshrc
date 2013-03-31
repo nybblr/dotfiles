@@ -22,10 +22,12 @@ alias mbd='middleman build --clean && middleman deploy --clean'
 alias mmb='middleman build --clean'
 alias mmd='middleman deploy --clean'
 
+# Any build for any language
+alias cbd ='rm -r build/*'
+
 # CMake
 # OOS builds
 alias cmake-build='cd build && cmake .. && cd ..'
-alias cmake-clean='rm -rf build/*'
 
 # Processing
 alias processing='processing-java --sketch=$PWD/ --output=$PWD/tmp/ --run --force'
