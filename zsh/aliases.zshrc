@@ -19,6 +19,8 @@ alias gsm='git smart-merge'
 
 # Middleman
 alias mbd='middleman build --clean && middleman deploy --clean'
+alias mmb='middleman build --clean'
+alias mmd='middleman deploy --clean'
 
 # CMake
 # OOS builds
