@@ -41,6 +41,7 @@ source $ZSH/oh-my-zsh.sh
 
 # I am a confident typist. Don't need zsh to correct me.
 unsetopt correct_all
+unsetopt correct
 
 # Modular configs
 setopt nullglob
