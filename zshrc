@@ -43,6 +43,9 @@ source $ZSH/oh-my-zsh.sh
 unsetopt correct_all
 unsetopt correct
 
+# Don't pause on escape.
+KEYTIMEOUT=1
+
 # Modular configs
 setopt nullglob
 for zconfig in ~/.zsh/*.zshrc
