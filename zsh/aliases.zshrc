@@ -3,7 +3,8 @@ alias la='ls -la'
 alias lah='ls -lah'
 
 # Git aliases
-alias s='git status'
+alias s='git status -sb'
+alias si='git status -sb --ignored'
 alias gcn='git clone'
 alias gum='git commit -am'
 # alias gump='gum && git push'
