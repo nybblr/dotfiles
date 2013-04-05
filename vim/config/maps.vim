@@ -11,8 +11,20 @@ inoremap <C-U> <C-G>u<C-U>
 " Control-s functionality for quick save
 " If the current buffer has never been saved, it will have no name,
 " " call the file browser to save it, otherwise just save it.
-nnoremap <silent> <C-S> :if expand("%") == ""<cr>browse confirm w<CR>else<CR>confirm w<CR>endif<CR>
-imap <c-s> <c-o><c-s>
+" nnoremap <silent> <C-S> :if expand("%") == ""<cr>browse confirm w<CR>else<CR>confirm w<CR>endif<CR>
+" imap <c-s> <c-o><c-s>
+" If the current buffer has never been saved, it will have no name,
+" call the file browser to save it, otherwise just save it.
+command -nargs=0 -bar Update if &modified
+													 \|  if empty(bufname('%'))
+													 \|    browse confirm write
+													 \|  else
+													 \|    confirm write
+													 \|  endif
+													 \|endif
+" nnoremap <silent> <c-s> :<c-u>Update<cr>
+inoremap <c-s> <c-o>:Update<cr>
+" imap <c-s> <c-o><c-s>
 
 
 " Paste mode toggle for CLI version
