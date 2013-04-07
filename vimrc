@@ -68,6 +68,12 @@ set wildmenu
 set list
 set listchars=tab:»-,trail:~,eol:¬
 
+" Use system clipboard
+" This will clear the system clipboard,
+" which is not always desirable.
+" set clipboard=unnamed
+" Preferable to just use "* prefix
+
 " Fix memory leak issue
 autocmd BufWinLeave * call clearmatches()
 

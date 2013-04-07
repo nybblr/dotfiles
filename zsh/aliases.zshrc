@@ -24,6 +24,13 @@ alias mbd='middleman build --clean && middleman deploy --clean'
 alias mmb='middleman build --clean'
 alias mmd='middleman deploy --clean'
 
+# rbenv/rvm
+alias rbv='rbenv'
+alias rbsys='rbenv use system'
+alias rbdef='rbenv use default'
+alias rb19='rbenv use 1.9.3'
+alias rb20='rbenv use 2.0.0'
+
 # Any build for any language
 alias cbd='rm -r build/*'
 
