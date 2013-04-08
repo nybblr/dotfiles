@@ -62,6 +62,10 @@ Bundle 'msanders/snipmate.vim'
 Bundle 'scrooloose/snipmate-snippets'
 Bundle 'Raimondi/delimitMate'
 
+" Collaboration
+Bundle 'mattn/webapi-vim'
+Bundle 'mattn/gist-vim'
+
 " Good Looks
 Bundle 'git@github.com:nybblr/vim-powerline'
 Bundle 'mikewest/vimroom'
