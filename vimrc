@@ -44,12 +44,14 @@ set backupdir=~/.vim-tmp//,/var/tmp//,/tmp//,.
 set undodir=~/.vim-tmp//,/var/tmp//,/tmp//,.
 set timeoutlen=300
 
-
 " Smart case detection, global default
 set ignorecase
 set smartcase
 set gdefault
 
+" More intuitive splitting
+set splitbelow
+set splitright
 
 " Code folding
 set foldmethod=manual

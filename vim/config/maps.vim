@@ -59,6 +59,14 @@ nmap <silent> <C-j> :wincmd j<cr>
 nmap <silent> <C-k> :wincmd k<cr>
 nmap <silent> <C-l> :wincmd l<cr>
 
+" Easy split resizing
+map  <silent> <D-\|> <c-w><bar>
+imap <silent> <D-\|> <esc><c-w><bar>i
+map  <silent> <D-_> <c-w>_
+imap <silent> <D-_> <esc><c-w>_i
+map  <silent> <D-=> <c-w>=
+imap <silent> <D-=> <esc><c-w>=i
+
 
 " Jumplist tab!
 nmap <s-tab> <c-o>
