@@ -13,6 +13,7 @@ Bundle 'git@github.com:nybblr/vim-processing'
 Bundle 'vim-scripts/glsl.vim'
 Bundle 'tpope/vim-liquid'
 Bundle 'slim-template/vim-slim'
+Bundle 'timcharper/textile.vim'
 
 Bundle 'tristen/vim-sparkup'
 
