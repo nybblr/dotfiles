@@ -18,3 +18,5 @@
 	default = simple
 [color]
 	ui = always
+[github]
+	user = nybblr
