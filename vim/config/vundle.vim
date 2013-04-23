@@ -12,5 +12,8 @@ Bundle 'gmarik/vundle'
 " Source bundles
 exe 'source' expand('<sfile>:h') . '/bundles.vim'
 
+" Source powerline
+set rtp+=~/.powerline/bindings/vim
+
 filetype plugin indent on
 """"" END Vundle """""

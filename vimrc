@@ -25,6 +25,8 @@ set ruler
 set showcmd
 " Show search results as I type
 set incsearch
+" Hide status when using powerline
+set noshowmode
 
 " Tabs the way I like them
 set tabstop=2
