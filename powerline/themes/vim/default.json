@@ -18,6 +18,16 @@
 		"left": [
 			{
 				"name": "mode",
+				"args": {
+					"override": {
+						"n": " N ",
+						"i": " I ",
+						"v": " V ",
+						"V": "V·L",
+						"^V": "V·B",
+						"R": " R "
+					}
+				},
 				"exclude_modes": ["nc"]
 			},
 			{

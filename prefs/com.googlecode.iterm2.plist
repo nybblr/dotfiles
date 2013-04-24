@@ -2016,7 +2016,7 @@
 	<key>NSWindow Frame Preferences</key>
 	<string>356 200 924 485 0 0 1280 778 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>0 26 1277 752 0 0 1280 778 </string>
+	<string>0 0 1280 800 0 0 1280 778 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>0 4 640 774 0 0 1280 778 </string>
 	<key>NSWindow Frame iTerm Window 4</key>
@@ -2027,7 +2027,7 @@
 			<key>ASCII Anti Aliased</key>
 			<true/>
 			<key>Ambiguous Double Width</key>
-			<true/>
+			<false/>
 			<key>Ansi 0 Color</key>
 			<dict>
 				<key>Blue Component</key>
