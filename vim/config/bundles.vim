@@ -68,7 +68,6 @@ Bundle 'mattn/webapi-vim'
 Bundle 'mattn/gist-vim'
 
 " Good Looks
-Bundle 'git@github.com:nybblr/vim-powerline'
 Bundle 'mikewest/vimroom'
 
 " Colorschemes
