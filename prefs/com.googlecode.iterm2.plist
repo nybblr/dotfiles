@@ -2733,7 +2733,7 @@
 			<key>Triggers</key>
 			<array/>
 			<key>Unlimited Scrollback</key>
-			<false/>
+			<true/>
 			<key>Use Bold Font</key>
 			<false/>
 			<key>Use Bright Bold</key>
