@@ -1,6 +1,6 @@
 " System
 Bundle 'maxbrunsfeld/vim-yankstack'
-Bundle 'git@github.com:nybblr/vim-session'
+Bundle 'xolox/vim-session'
 
 " Syntax
 Bundle 'vim-ruby/vim-ruby'

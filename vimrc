@@ -144,6 +144,7 @@ xnoremap <ScrollWheelDown> <esc><ScrollWheelDown>
 
 " Sessions
 let g:session_directory='./'
+let g:session_extension='.vis'
 let g:session_autoload='yes'
 let g:session_autosave='yes'
 
