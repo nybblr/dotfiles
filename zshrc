@@ -3,6 +3,7 @@ source $HOME/.bash_profile
 
 # Path to your oh-my-zsh configuration.
 ZSH=$HOME/.oh-my-zsh
+ZSH_CUSTOM=$HOME/.zsh
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
@@ -45,13 +46,6 @@ unsetopt correct
 
 # Don't pause on escape.
 KEYTIMEOUT=1
-
-# Modular configs
-setopt nullglob
-for zconfig in ~/.zsh/*.zshrc
-do
-	source $zconfig
-done
 
 # Growl function that I'll never use
 growl() { echo -e $'\e]9;'${1}'\007' ; return ; }
