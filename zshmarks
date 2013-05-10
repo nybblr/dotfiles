@@ -5,6 +5,7 @@ dev: ~/Development
 unix: ~dev/UNIX
 rad: ~dev/Rails
 rbd: ~dev/Ruby
+jsd: ~dev/JavaScript
 pyd: ~dev/Python
 quibble: ~rad/quibble
 photos: ~rad/photos
