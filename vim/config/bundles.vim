@@ -25,6 +25,7 @@ Bundle 'sontek/rope-vim'
 Bundle 'mileszs/ack.vim'
 Bundle 'rking/ag.vim'
 Bundle 'tpope/vim-eunuch'
+Bundle 'tpope/vim-dispatch'
 
 Bundle 'vim-scripts/Conque-Shell'
 Bundle 'skwp/vim-ruby-conque'
