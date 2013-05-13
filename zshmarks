@@ -1,18 +1,1 @@
----
-ub: /usr/bin
-ulb: /usr/local/bin
-dev: ~/Development
-unix: ~dev/UNIX
-rad: ~dev/Rails
-rbd: ~dev/Ruby
-jsd: ~dev/JavaScript
-pyd: ~dev/Python
-quibble: ~rad/quibble
-photos: ~rad/photos
-orange: ~rad/orangescale
-dots: ~/.dotfiles
-chef: ~/.chef
-fonts: ~/Library/Fonts
-
-class: ~/Documents/Classwork
-work: ~dev/Work
+pidots/zshmarks
