@@ -26,29 +26,10 @@ if has("gui_running")
 	set noballooneval
 	autocmd FileType ruby setlocal noballooneval
 
-	" Fancy status lines
-	let g:Powerline_symbols='fancy'
-	let g:Powerline_colorscheme='solarizedDevin'
-	let g:Powerline_theme='devin'
-
 	" Detect if a tab was closed, and ensure that height of main window fills the screen (100% height)
 	au TabEnter,TabLeave,BufDelete * let &lines=200
 else
-	" let g:solarized_termcolors=256
-	" set background=dark
-	" colorscheme solarized
-
-	" " Fancy status lines
-	" let g:Powerline_symbols='fancy'
-	" let g:Powerline_colorscheme='solarized256'
-	" let g:Powerline_theme='devin'
-
 	colorscheme tomorrow-night
-
-	" Fancy status lines
-	let g:Powerline_symbols='fancy'
-	let g:Powerline_colorscheme='solarized256'
-	let g:Powerline_theme='devin'
 endif
 
 
