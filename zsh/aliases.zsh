@@ -11,6 +11,7 @@ alias gum='git commit -am'
 alias gam='git add -A && git commit -m'
 # alias gamp='gam && git push'
 alias gd='git diff'
+alias gwd='git diff --color-words'
 alias gcm='git commit -m'
 alias gptg='git push --tags'
 
@@ -18,6 +19,9 @@ alias gptg='git push --tags'
 alias gsl='git smart-pull'
 alias gslg='git smart-log'
 alias gsm='git smart-merge'
+
+# Diffs
+# alias cwdiff='wdiff -n -w $'"'"'\033[30;41m'"'"' -x $'"'"'\033[0m'"'"' -y $'"'"'\033[30;42m'"'"' -z $'"'"'\033[0m'"'"' \]'"'"
 
 # Middleman
 alias mbd='middleman build --clean && middleman deploy --clean'
