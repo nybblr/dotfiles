@@ -48,8 +48,11 @@ Bundle 'sjl/splice.vim'
 Bundle 'Lokaltog/vim-easymotion'
 Bundle 'tpope/vim-repeat'
 Bundle 'tpope/vim-surround'
+Bundle 'tpope/vim-abolish'
+Bundle 'tpope/vim-unimpaired'
 Bundle 'godlygeek/tabular'
 Bundle 'tomtom/tcomment_vim'
+Bundle 'vim-scripts/swap'
 
 " Navigation
 Bundle 'wincent/Command-T'
