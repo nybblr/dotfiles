@@ -195,6 +195,9 @@ vmap <leader>a: :Tabularize /:\zs<cr>
 nmap <leader>ag :Tabularize /=><cr>
 vmap <leader>ag :Tabularize /=><cr>
 
+" Quickly clear highlighting
+nmap <silent> ch :noh<cr>
+
 " Convert to unix file
 nmap <leader>ff :set ff=unix<cr>
 
