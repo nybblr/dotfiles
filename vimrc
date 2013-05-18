@@ -1,7 +1,6 @@
 " Use Vim settings/features
 set nocompatible
 set encoding=utf-8
-filetype plugin indent on
 
 " Enable matchit
 runtime macros/matchit.vim
