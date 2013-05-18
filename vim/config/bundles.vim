@@ -40,6 +40,8 @@ Bundle 'ecomba/vim-ruby-refactoring'
 Bundle 'AndrewRadev/switch.vim'
 Bundle 'tpope/vim-endwise'
 Bundle 'austintaylor/vim-indentobject'
+Bundle 'vim-scripts/ruby-matchit'
+Bundle 'vim-scripts/matchindent.vim'
 
 " SCC
 Bundle 'tpope/vim-fugitive'

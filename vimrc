@@ -145,6 +145,8 @@ xnoremap <ScrollWheelDown> <esc><ScrollWheelDown>
 " Autocomplete
 let g:neocomplcache_enable_at_startup = 1
 
+" Enable matchit
+runtime macros/matchit.vim
 
 " Sessions
 let g:session_directory='./'
