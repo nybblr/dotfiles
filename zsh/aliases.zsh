@@ -7,9 +7,13 @@ alias s='git status -sb'
 alias si='git status -sb --ignored'
 alias gcn='git clone'
 alias gum='git commit -am'
-# alias gump='gum && git push'
+gamp() {
+	gum "$*" && git push
+}
 alias gam='git add -A && git commit -m'
-# alias gamp='gam && git push'
+gamp() {
+	gam "$*" && git push
+}
 alias gd='git diff'
 alias gwd='git diff --color-words'
 alias gcm='git commit -m'
