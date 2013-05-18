@@ -30,8 +30,18 @@ Bundle 'tpope/vim-dispatch'
 Bundle 'vim-scripts/Conque-Shell'
 Bundle 'skwp/vim-ruby-conque'
 
+" Text Objects
+Bundle 'kana/vim-textobj-user'
+Bundle 'nelstrom/vim-textobj-rubyblock'
+Bundle 'glts/vim-textobj-comment'
+Bundle 'kana/vim-textobj-indent'
+Bundle 'kana/vim-textobj-datetime'
+Bundle 'kana/vim-textobj-function'
+Bundle 'lucapette/vim-textobj-underscore'
+Bundle 'rhysd/vim-textobj-continuous-line'
+Bundle 'mattn/vim-textobj-url'
+
 " Code Semantics
-" Bundle 'vim-scripts/AutoComplPop'
 Bundle 'vim-scripts/neocomplcache'
 Bundle 'scrooloose/syntastic'
 Bundle 'majutsushi/tagbar'

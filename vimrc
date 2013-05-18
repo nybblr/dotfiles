@@ -1,6 +1,10 @@
 " Use Vim settings/features
 set nocompatible
 set encoding=utf-8
+filetype plugin indent on
+
+" Enable matchit
+runtime macros/matchit.vim
 
 " Source vundle
 exe 'source' expand('<sfile>:h') . '/.vim/config/vundle.vim'
@@ -144,9 +148,6 @@ xnoremap <ScrollWheelDown> <esc><ScrollWheelDown>
 
 " Autocomplete
 let g:neocomplcache_enable_at_startup = 1
-
-" Enable matchit
-runtime macros/matchit.vim
 
 " Sessions
 let g:session_directory='./'
