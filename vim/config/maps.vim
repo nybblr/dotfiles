@@ -198,6 +198,9 @@ vmap <leader>ag :Tabularize /=><cr>
 " Quickly clear highlighting
 nmap <silent> ch :noh<cr>
 
+" Move text to next line, ditching whitespace
+nmap <silent> gs i<cr><esc>l$:silent! s/\s\+$//<cr>k^
+
 " Convert to unix file
 nmap <leader>ff :set ff=unix<cr>
 

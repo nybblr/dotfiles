@@ -31,7 +31,8 @@ Bundle 'vim-scripts/Conque-Shell'
 Bundle 'skwp/vim-ruby-conque'
 
 " Code Semantics
-Bundle 'vim-scripts/AutoComplPop'
+" Bundle 'vim-scripts/AutoComplPop'
+Bundle 'vim-scripts/neocomplcache'
 Bundle 'scrooloose/syntastic'
 Bundle 'majutsushi/tagbar'
 Bundle 'nathanaelkane/vim-indent-guides'

@@ -142,6 +142,10 @@ xnoremap <ScrollWheelUp> <esc><ScrollWheelUp>
 xnoremap <ScrollWheelDown> <esc><ScrollWheelDown>
 
 
+" Autocomplete
+let g:neocomplcache_enable_at_startup = 1
+
+
 " Sessions
 let g:session_directory='./'
 let g:session_extension='.vis'
