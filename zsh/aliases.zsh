@@ -13,6 +13,7 @@ gamp() { gam "$*" && git push }
 alias gd='git diff'
 alias gwd='git diff --color-words'
 alias gcm='git commit -m'
+gcmp() { gcm "$*" && git push}
 alias gptg='git push --tags'
 
 alias gff='git pull --ff-only'
