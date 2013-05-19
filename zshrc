@@ -40,6 +40,9 @@ source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
 
+# Use Powerline
+. ~/.powerline/bindings/zsh/powerline.zsh
+
 # I am a confident typist. Don't need zsh to correct me.
 unsetopt correct_all
 unsetopt correct
