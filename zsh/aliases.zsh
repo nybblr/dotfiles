@@ -15,6 +15,9 @@ alias gwd='git diff --color-words'
 alias gcm='git commit -m'
 alias gptg='git push --tags'
 
+alias gff='git pull --ff-only'
+alias gfm='git pull --no-ff'
+
 # git-smart aliases
 alias gsl='git smart-pull'
 alias gslg='git smart-log'
