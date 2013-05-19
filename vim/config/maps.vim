@@ -212,10 +212,10 @@ map <leader>sn :ConqueTermTab zsh<cr>
 map <leader>sw :%s/\s\+$// \| noh<cr>
 
 map <leader>rt :RetabIndent<cr>
-map <leader>et :Space2Tab<cr>
-map <leader>dt :Tab2Space<cr>
-map <leader>st :Space2Tab<cr>
-map <leader>ts :Tab2Space<cr>
+map <leader>et :set noexpandtab <bar> Space2Tab<cr>
+map <leader>dt :set expandtab <bar> Tab2Space<cr>
+" map <leader>st :Space2Tab<cr>
+" map <leader>ts :Tab2Space<cr>
 
 map <leader>c :TComment<cr>
 map <leader>cc :TCommentInline<cr>
