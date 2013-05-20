@@ -93,7 +93,8 @@
 				"name": "line_percent",
 				"priority": 50,
 				"width": 4,
-				"align": "r"
+				"align": "r",
+				"args": { "gradient": false }
 			},
 			{
 				"type": "string",
