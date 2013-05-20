@@ -1,7 +1,7 @@
 #!/bin/bash
 # cryption.sh: command line for quick encryption/decryption
 usage() {
-	echo "Usage: $0 filename (-e|-d|-o)"
+	echo "Usage: cryption filename [-e|-d|-o|-v]"
 	exit 1
 }
 
@@ -14,26 +14,29 @@ is_file_exits() {
 
 FILE=$2
 EXT=enc
-MODE=e
+MODE=v
 
 # Check -d argument
-while getopts "edo" opt
+while getopts "vedo" opt
 do
 	case $opt in
 		e)
-			echo "I found a -e!" >&2
+			EXT=enc
+			MODE=e
 			;;
 		d)
-			echo "I found a -d!" >&2
 			EXT=dec
 			MODE=d
 			;;
 		o)
-			echo "We'll open the file for editing." >&2
 			MODE=o
 			;;
-		\?)
+		v)
+			MODE=v
+			;;
+		*)
 			echo "Invalid option!"
+			exit 1
 			;;
 	esac
 done
@@ -42,8 +45,9 @@ OUT=$FILE.$EXT
 
 if ( is_file_exits "$FILE" )
 then
-	if [ $MODE = "o" ]
-	then
+	case $MODE in
+	o)
+		echo "We'll open the file for editing." >&2
 		echo "Decrypting $FILE..."
 
 		TEMP=`basename $FILE`
@@ -64,13 +68,28 @@ then
 		echo "File saved and reencrypted!"
 
 		rm $tmp
-	else
+		;;
+	v)
+		echo "We'll open the file for viewing." >&2
+		echo "Decrypting $FILE..."
+
+		# get password
+		stty -echo
+		read -p "Password: " passw; echo
+		stty echo
+
+		# Decrypt and open in less
+		echo "$passw" | openssl enc -d -aes-256-cbc -salt -in $FILE -pass stdin | less -R
+		;;
+	*)
+		echo "We'll ${EXT}rypt the file." >&2
 		echo "${EXT}rypting $1..."
 
 		openssl enc -$MODE -aes-256-cbc -salt -in $FILE -out $OUT
-	fi
+		;;
+	esac
 else
-	"File not found!"
+	echo "File not found!"
 fi
 
 
