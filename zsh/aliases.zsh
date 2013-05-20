@@ -27,6 +27,11 @@ alias gsm='git smart-merge'
 # Diffs
 # alias cwdiff='wdiff -n -w $'"'"'\033[30;41m'"'"' -x $'"'"'\033[0m'"'"' -y $'"'"'\033[30;42m'"'"' -z $'"'"'\033[0m'"'"' \]'"'"
 
+# Tmux
+alias tls='tmux list-sessions'
+alias tas='tmux attach-session'
+alias tks='tmux kill-session -t'
+
 # Middleman
 alias mbd='middleman build --clean && middleman deploy --clean'
 alias mmb='middleman build --clean'
