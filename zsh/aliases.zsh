@@ -29,7 +29,8 @@ alias gsm='git smart-merge'
 
 # Tmux
 alias tls='tmux list-sessions'
-alias tas='tmux attach-session'
+alias tas='tmux attach-session -t'
+alias tns='tmux new-session -s'
 alias tks='tmux kill-session -t'
 
 # Middleman
