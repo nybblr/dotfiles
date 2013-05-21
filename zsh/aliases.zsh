@@ -33,6 +33,9 @@ alias tas='tmux attach-session -t'
 alias tns='tmux new-session -s'
 alias tks='tmux kill-session -t'
 
+# Pasteboard
+alias pbch='textutil -format html -convert rtf -stdin -stdout | pbcopy -Prefer rtf'
+
 # Middleman
 alias mbd='middleman build --clean && middleman deploy --clean'
 alias mmb='middleman build --clean'
