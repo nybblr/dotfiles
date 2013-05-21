@@ -29,7 +29,9 @@ if has("gui_running")
 	" Detect if a tab was closed, and ensure that height of main window fills the screen (100% height)
 	au TabEnter,TabLeave,BufDelete * let &lines=200
 else
-	colorscheme tomorrow-night
+	" colorscheme tomorrow-night
+	colorscheme solarized
+	set background=dark
 endif
 
 
