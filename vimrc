@@ -34,6 +34,7 @@ set noshowmode
 " Tabs the way I like them
 set tabstop=2
 set shiftwidth=2
+set softtabstop=2
 set noexpandtab
 autocmd User Rails set noexpandtab
 
