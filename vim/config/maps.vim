@@ -40,24 +40,32 @@ noremap k gj
 noremap l gk
 noremap ; l
 
-" Clear search results on esc
-" nnoremap <esc> :noh<cr><esc>
-" nnoremap <silent> <esc> :let @/=""<cr><esc>
-" nnoremap <silent> <esc> :if !empty(@/) <bar> let @/="" <bar> else <bar> call feedkeys("\<esc\>") <bar> endif<cr>
-" nnoremap <silent> <esc> :call ClearSearchOrEsc()<cr>
-" function! ClearSearchOrEsc()
-" 	if !empty(@/)
-" 		let @/=""
-" 	else
-" 		call feedkeys("esc")
-" 	endif
-" endfunction
+" Arrow keys from home row
+" In all modes!
+inoremap <a-j> <left>
+noremap  <a-j> <left>
+inoremap <a-k> <down>
+noremap  <a-k> <down>
+inoremap <a-l> <up>
+noremap  <a-l> <up>
+inoremap <a-;> <right>
+noremap  <a-;> <right>
+
+" And disable regular arrow keys
+inoremap  <up>     <nop>
+inoremap  <down>   <nop>
+inoremap  <left>   <nop>
+inoremap  <right>  <nop>
+noremap   <up>     <nop>
+noremap   <down>   <nop>
+noremap   <left>   <nop>
+noremap   <right>  <nop>
 
 " Quick window switching
-nmap <silent> <C-h> :wincmd h<cr>
-nmap <silent> <C-j> :wincmd j<cr>
-nmap <silent> <C-k> :wincmd k<cr>
-nmap <silent> <C-l> :wincmd l<cr>
+nmap <silent> <c-h> :wincmd h<cr>
+nmap <silent> <c-j> :wincmd j<cr>
+nmap <silent> <c-k> :wincmd k<cr>
+nmap <silent> <c-l> :wincmd l<cr>
 
 " Easy split resizing
 map  <silent> <D-\|> <c-w><bar>
@@ -68,22 +76,12 @@ map  <silent> <D-=> <c-w>=
 imap <silent> <D-=> <esc><c-w>=i
 
 
-" Jumplist tab!
+" Jumplist tab with shift-tab
 nmap <s-tab> <c-o>
 
-" Autocomplete shortcut
-" Remap code completion to Ctrl+Space {{{2
-" inoremap <Nul> <C-x><C-o>
-" inoremap <expr> <leader>, pumvisible() \|\| &omnifunc == '' ?
-" 			\ "\<lt>C-n>" :
-" 			\ "\<lt>C-x>\<lt>C-o><c-r>=pumvisible() ?" .
-" 			\ "\"\\<lt>c-n>\\<lt>c-p>\\<lt>c-n>\" :" .
-" 			\ "\" \\<lt>bs>\\<lt>C-n>\"\<cr>"
-" imap <C-@> <Nul>
-
 " Add lines without entering insert mode
-map <S-Enter> O<esc>k
-map <cr> o<esc>l
+map <s-cr> mZO<esc>`Z
+map <cr> mZo<esc>`Z
 
 " More intuitive undo
 map U :redo<cr>
@@ -199,8 +197,8 @@ vmap <leader>ag :Tabularize /=><cr>
 nmap <silent> ch :noh<cr>
 
 " Move text to next line, ditching whitespace, and vice versa!
-nmap <silent> gs i<cr><esc>l$:s/\s\+$//e <bar> noh<cr>k^
-nmap <silent> gS msk:s/^\s\+//e <bar> noh<cr>^yg_lA <esc>pkdd`s
+nnoremap <silent> gs i<cr><esc>k$:s/\s\+$//e <bar> noh<cr>j^
+nnoremap <silent> gS mZj:s/^\s\+//e <bar> noh<cr>^yg_kA <esc>pjdd`Z
 
 " Convert to unix file
 nmap <leader>ff :set ff=unix<cr>
