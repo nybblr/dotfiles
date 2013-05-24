@@ -2,6 +2,10 @@
 alias la='ls -la'
 alias lah='ls -lah'
 
+# View commands
+alias lr='less -R'
+alias tf='tail -f'
+
 # Git aliases
 alias s='git status -sb'
 alias si='git status -sb --ignored'

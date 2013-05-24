@@ -130,6 +130,10 @@ if !exists(":DiffOrig")
 			\ | wincmd p | diffthis
 endif
 
+" Use Ag instead of Grep
+if executable("ag")
+	set grepprg=ag\ --nogroup\ --nocolor
+endif
 
 " NERDTree configs
 " autocmd vimenter * if !argc() | NERDTree | endif
