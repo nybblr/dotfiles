@@ -71,6 +71,7 @@ set selectmode=""
 
 " Autocomplete for menu
 set wildmenu
+set wildmode=longest,list
 "
 " Let there be trailing whitespace!
 set list
@@ -84,6 +85,9 @@ set listchars=tab:»-,trail:~,eol:¬
 
 " Fix memory leak issue
 autocmd BufWinLeave * call clearmatches()
+
+" 3 line margin around cursor
+set scrolloff=3
 
 " I want to see where my cursor is
 set cursorline
