@@ -5,7 +5,7 @@ let maplocalleader=",,"
 
 " CTRL-U in insert mode deletes a lot.  Use CTRL-G u to first break undo,
 " so that you can undo CTRL-U after inserting a line break.
-inoremap <C-U> <C-G>u<C-U>
+inoremap <c-u> <c-g>u<c-u>
 
 
 " Control-s functionality for quick save
@@ -28,8 +28,8 @@ inoremap <c-s> <c-o>:Update<cr>
 
 
 " Paste mode toggle for CLI version
-nnoremap <F2> :set invpaste paste?<cr>
-set pastetoggle=<F2>
+nnoremap <f2> :set invpaste paste?<cr>
+set pastetoggle=<f2>
 set showmode
 
 
@@ -151,15 +151,15 @@ imap <D-9> <esc>9gt
 imap <D-0> <esc>:tablast<cr>
 
 " Jump to start/end of line
-map <D-j> ^
+map  <D-j> ^
 imap <D-j> <esc>^i
-map <D-;> $
+map  <D-;> $
 imap <D-;> <esc>$a
 
 " Scroll mappings (mvim disabled in gvimrc)
-map <silent> <D-k> <c-e>
+map  <silent> <D-k> <c-e>
 imap <silent> <D-k> <esc><c-e>a
-map <silent> <D-l> <c-y>
+map  <silent> <D-l> <c-y>
 imap <silent> <D-l> <esc><c-y>a
 
 map <leader>nt :NERDTreeToggle<cr>

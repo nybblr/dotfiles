@@ -11,6 +11,7 @@ exe 'source' expand('<sfile>:h') . '/.vim/config/vundle.vim'
 " Turn off modeline; vulnerability
 set modelines=0
 set nomodeline
+set noshowmode
 
 " Source GUI configuration
 exe 'source' expand('<sfile>:h') . '/.vim/config/gui.vim'
