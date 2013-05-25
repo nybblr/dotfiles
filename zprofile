@@ -1,3 +1,6 @@
+# Always use local bin first
+export PATH=/usr/local/bin:$PATH
+
 # Source my local scripts
 export PATH=$PATH:$HOME/.bin
 
