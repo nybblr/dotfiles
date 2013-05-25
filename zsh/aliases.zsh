@@ -23,10 +23,7 @@ alias gptg='git push --tags'
 alias gff='git pull --ff-only'
 alias gfm='git pull --no-ff'
 
-# git-smart aliases
-alias gsl='git smart-pull'
-alias gslg='git smart-log'
-alias gsm='git smart-merge'
+alias ggl='git log --oneline --graph --pretty="format:%C(yellow)%h%Cblue%d%Creset %s %C(white) %an, %ar%Creset"'
 
 # Diffs
 # alias cwdiff='wdiff -n -w $'"'"'\033[30;41m'"'"' -x $'"'"'\033[0m'"'"' -y $'"'"'\033[30;42m'"'"' -z $'"'"'\033[0m'"'"' \]'"'"
