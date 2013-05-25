@@ -1,4 +1,3 @@
-source $HOME/.bash_profile
 # source /etc/profile
 
 # Path to your oh-my-zsh configuration.
@@ -42,6 +41,9 @@ source $ZSH/oh-my-zsh.sh
 
 # Use Powerline
 . ~/.powerline/bindings/zsh/powerline.zsh
+
+# Load tmuxinator
+[[ -s $HOME/.tmuxinator/scripts/tmuxinator ]] && source $HOME/.tmuxinator/scripts/tmuxinator
 
 # I am a confident typist. Don't need zsh to correct me.
 unsetopt correct_all

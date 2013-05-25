@@ -1,6 +1,3 @@
-[[ -s $HOME/.tmuxinator/scripts/tmuxinator ]] && source $HOME/.tmuxinator/scripts/tmuxinator # Load tmuxinator
-[[ -s "$HOME/.pythonbrew/etc/bashrc" ]] && source "$HOME/.pythonbrew/etc/bashrc" # Load pythonbrew
-
 # Source my local scripts
 export PATH=$PATH:$HOME/.bin
 
@@ -21,7 +18,7 @@ export EDITOR='mvim -f'
 # No beer can, please
 export HOMEBREW_NO_EMOJI=1
 
-# Source bashrc for machine-centric config
-if [ -f ~/.bashrc ]; then
-  source ~/.bashrc
+# Source profile for machine-centric config
+if [ -f ~/.profile ]; then
+  source ~/.profile
 fi
