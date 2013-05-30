@@ -20,6 +20,9 @@ gem 'pry'
 gem 'pry-doc'
 gem 'pry-theme'
 
+# CI tests
+gem 'travis'
+
 # Ruby development
 gem 'guard' # run scripts on events
 gem 'rb-fsevent' # osx events
