@@ -22,6 +22,7 @@ gem 'pry-theme'
 
 # CI tests
 gem 'travis'
+gem 'travis-lint'
 
 # Ruby development
 gem 'guard' # run scripts on events

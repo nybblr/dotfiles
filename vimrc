@@ -37,7 +37,6 @@ set tabstop=2
 set shiftwidth=2
 set softtabstop=2
 set noexpandtab
-autocmd User Rails set noexpandtab
 
 " Show number lines
 set number
