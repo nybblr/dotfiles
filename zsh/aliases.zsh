@@ -38,6 +38,9 @@ alias tds='tmux detach-client'
 # Pasteboard
 alias pbch='textutil -format html -convert rtf -stdin -stdout | pbcopy -Prefer rtf'
 
+# Heroku
+alias hpr='git push heroku master && heroku restart'
+
 # Middleman
 alias mbd='middleman build --clean && middleman deploy --clean'
 alias mmb='middleman build --clean'
