@@ -5,6 +5,7 @@ Bundle 'xolox/vim-session'
 " Syntax
 Bundle 'vim-ruby/vim-ruby'
 Bundle 'tpope/vim-rails'
+Bundle 'elixir-lang/vim-elixir'
 Bundle 'tpope/vim-haml'
 Bundle 'git@github.com:nybblr/vim-coffee-script'
 Bundle 'git@github.com:nybblr/vim-markdown'
@@ -81,6 +82,7 @@ Bundle 'vim-scripts/TaskList.vim'
 Bundle 'msanders/snipmate.vim'
 Bundle 'scrooloose/snipmate-snippets'
 Bundle 'Raimondi/delimitMate'
+Bundle 'carlosgaldino/elixir-snippets'
 
 " Collaboration
 Bundle 'mattn/webapi-vim'
