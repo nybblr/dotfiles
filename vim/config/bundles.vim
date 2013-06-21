@@ -74,6 +74,7 @@ Bundle 'vim-scripts/swap'
 Bundle 'wincent/Command-T'
 Bundle 'scrooloose/nerdtree'
 Bundle 'jistr/vim-nerdtree-tabs'
+Bundle 'christoomey/vim-tmux-navigator'
 
 " Project Management
 Bundle 'vim-scripts/TaskList.vim'
