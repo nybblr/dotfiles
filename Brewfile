@@ -18,6 +18,8 @@ rbenv-gem-rehash
 rbenv-gemset
 readline
 
+phantomjs
+
 # Apps
 # mutt
 

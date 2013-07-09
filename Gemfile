@@ -4,6 +4,7 @@ source 'https://rubygems.org/'
 gem 'tmuxinator'
 gem 'git-smart' # smart pull/rebase/merge/log
 gem 'brewdler' # manage binary deps
+gem 'lunchy' # much nicer OSX launchctl
 
 # Vim
 gem 'CoffeeTags' # coffeescript support for ctags

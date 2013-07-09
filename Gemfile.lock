@@ -45,6 +45,7 @@ GEM
       rb-inotify (>= 0.9)
       rb-kqueue (>= 0.2)
     lumberjack (1.0.3)
+    lunchy (0.6.0)
     method_source (0.8.1)
     multi_json (1.7.4)
     multipart-post (1.2.0)
@@ -97,6 +98,7 @@ DEPENDENCIES
   git-smart
   guard
   hijack
+  lunchy
   pry
   pry-doc
   pry-theme
