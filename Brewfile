@@ -52,6 +52,7 @@ htop
 heroku-toolbelt
 ec2-api-tools
 reattach-to-user-namespace
+cloc
 
 # Network
 siege
