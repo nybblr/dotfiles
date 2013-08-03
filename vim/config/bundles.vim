@@ -59,6 +59,7 @@ Bundle 'vim-scripts/ruby-matchit'
 " SCC
 Bundle 'tpope/vim-fugitive'
 Bundle 'sjl/splice.vim'
+Bundle 'airblade/vim-gitgutter'
 
 " Motions
 Bundle 'Lokaltog/vim-easymotion'
