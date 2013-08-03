@@ -10,6 +10,9 @@ export PATH=$PATH:/usr/local/share/npm/bin
 # Source python packages
 export PATH=$PATH:/usr/local/share/python
 
+# Source boxen environment
+[ -f /opt/boxen/env.sh ] && source /opt/boxen/env.sh
+
 # Set language (Lion bug)
 export LANG=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
