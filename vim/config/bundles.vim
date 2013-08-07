@@ -1,6 +1,7 @@
 " System
 Bundle 'maxbrunsfeld/vim-yankstack'
 Bundle 'xolox/vim-session'
+Bundle 'xolox/vim-misc'
 
 " Syntax
 Bundle 'vim-ruby/vim-ruby'

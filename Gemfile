@@ -10,9 +10,6 @@ gem 'lunchy' # much nicer OSX launchctl
 gem 'CoffeeTags' # coffeescript support for ctags
 gem 'rcodetools' # ruby autocomplete and more
 
-# Rubies
-gem 'rbenv-gem-rehash' # automatically rehash
-
 # Prettier IRB
 gem 'awesome_print' # indent and color output
 

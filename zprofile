@@ -8,7 +8,9 @@ export PATH=$PATH:$HOME/.bin
 export PATH=$PATH:/usr/local/share/npm/bin
 
 # Source python packages
-export PATH=$PATH:/usr/local/share/python
+# Unneeded as of latest Python
+# Remove after pip install --upgrade
+# export PATH=$PATH:/usr/local/share/python
 
 # Source boxen environment
 [ -f /opt/boxen/env.sh ] && source /opt/boxen/env.sh

@@ -53,8 +53,10 @@ heroku-toolbelt
 ec2-api-tools
 reattach-to-user-namespace
 cloc
+trash
 
 # Network
+openssl
 siege
 curl-ca-bundle
 
@@ -79,7 +81,6 @@ valgrind
 ffmpeg
 
 fontforge
-fontconfig
 harfbuzz
 icu4c
 
