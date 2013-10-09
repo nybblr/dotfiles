@@ -15,13 +15,13 @@ if !empty(match)
 	let clColor = match[1]
 end
 
-hi Spaces guifg=gray
-exe 'hi Spaces ' . property . 'bg=' . clColor
-
-match Spaces /^ \+/
-autocmd BufWinEnter * match Spaces /^ \+/
-autocmd InsertEnter * match Spaces /^ \+\%#\@<!/
-autocmd InsertLeave * match Spaces /^ \+/
+" hi Spaces guifg=gray
+" exe 'hi Spaces ' . property . 'bg=' . clColor
+" 
+" match Spaces /^ \+/
+" autocmd BufWinEnter * match Spaces /^ \+/
+" autocmd InsertEnter * match Spaces /^ \+\%#\@<!/
+" autocmd InsertLeave * match Spaces /^ \+/
 
 " Hide tabs
 exe 'hi Tabs ' . property . 'fg=' . clColor
