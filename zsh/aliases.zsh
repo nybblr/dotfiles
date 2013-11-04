@@ -25,6 +25,8 @@ alias gfm='git pull --no-ff'
 
 alias ggl='git log --oneline --graph --pretty="format:%C(yellow)%h%Cblue%d%Creset %s %C(white) %an, %ar%Creset"'
 
+alias gdm='git diff `git merge-base master HEAD`'
+
 # Diffs
 # alias cwdiff='wdiff -n -w $'"'"'\033[30;41m'"'"' -x $'"'"'\033[0m'"'"' -y $'"'"'\033[30;42m'"'"' -z $'"'"'\033[0m'"'"' \]'"'"
 
