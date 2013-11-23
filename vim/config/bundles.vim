@@ -17,6 +17,7 @@ Bundle 'tpope/vim-liquid'
 Bundle 'slim-template/vim-slim'
 Bundle 'groenewege/vim-less'
 Bundle 'timcharper/textile.vim'
+Bundle 'digitaltoad/vim-jade'
 
 Bundle 'tristen/vim-sparkup'
 
