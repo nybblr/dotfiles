@@ -18,6 +18,8 @@ Bundle 'slim-template/vim-slim'
 Bundle 'groenewege/vim-less'
 Bundle 'timcharper/textile.vim'
 Bundle 'digitaltoad/vim-jade'
+Bundle 'heartsentwined/vim-emblem'
+Bundle 'mustache/vim-mustache-handlebars'
 
 Bundle 'tristen/vim-sparkup'
 
