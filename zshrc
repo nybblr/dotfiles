@@ -9,7 +9,7 @@ ZSH_CUSTOM=$HOME/.zsh
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
 # ZSH_THEME="robbyrussell"
-ZSH_THEME="devin"
+ZSH_THEME="iamdev"
 
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
@@ -40,7 +40,7 @@ source $ZSH/oh-my-zsh.sh
 # Customize to your needs...
 
 # Use Powerline
-. ~/.powerline/bindings/zsh/powerline.zsh
+# . ~/.powerline/bindings/zsh/powerline.zsh
 
 # Load tmuxinator
 [[ -s $HOME/.tmuxinator/scripts/tmuxinator ]] && source $HOME/.tmuxinator/scripts/tmuxinator
