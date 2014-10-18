@@ -102,3 +102,5 @@ Bundle 'mikewest/vimroom'
 Bundle 'altercation/vim-colors-solarized'
 Bundle 'nanotech/jellybeans.vim'
 Bundle 'nybblr/caffeine.vim'
+
+Bundle 'bling/vim-airline'

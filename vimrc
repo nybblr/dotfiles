@@ -30,7 +30,7 @@ set showcmd
 " Show search results as I type
 set incsearch
 " Hide status when using powerline
-set noshowmode
+" set noshowmode
 
 " Tabs the way I like them
 set tabstop=2
@@ -168,6 +168,8 @@ let g:indent_guides_enable_on_vim_startup=0 "enable on startup
 let g:indent_guides_start_level=2
 let g:indent_guides_guide_size=1
 
+" Airline
+let g:airline_powerline_fonts = 1
 
 " Source custom highlights
 exe 'source' expand('<sfile>:h') . '/.vim/config/highlights.vim'

@@ -7,8 +7,8 @@ endif
 
 
 if has("gui_running")
-	colorscheme solarized
-	set background=light
+	colorscheme tomorrow-night
+	" set background=light
 
 	" colorscheme railscasts
 	set guioptions-=R
@@ -18,7 +18,7 @@ if has("gui_running")
 	set guioptions-=T
 
 	" set guifont=Menlo,12
-	set guifont=Source\ Code\ Pro\ for\ Powerline:h13
+	set guifont=Source\ Code\ Pro\ for\ Powerline:h16
 
 	set macmeta
 
@@ -29,8 +29,7 @@ if has("gui_running")
 	" Detect if a tab was closed, and ensure that height of main window fills the screen (100% height)
 	au TabEnter,TabLeave,BufDelete * let &lines=200
 else
-	" colorscheme tomorrow-night
-	colorscheme solarized
+	colorscheme tomorrow-night
 	set background=dark
 endif
 
