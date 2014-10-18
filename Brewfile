@@ -59,6 +59,7 @@ trash
 openssl
 siege
 curl-ca-bundle
+ngrok
 
 # Vim
 vim
