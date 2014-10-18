@@ -1,0 +1,16 @@
+#!/usr/bin/env ruby
+videos = ARGV.map do |path|
+  if File.directory?(path)
+    Dir[File.join(path, "*.MLV")]
+  else
+    path
+  end
+end.flatten
+
+videos.each do |video|
+  directory = video.chomp(File.extname(video))
+  Dir.mkdir(directory)
+  puts "Extracting #{video}..."
+  # puts "mlv_dump --dng -o \"#{directory}\" \"#{video}\""
+  `mlv_dump --dng -o "#{directory}/" "#{video}"`
+end
