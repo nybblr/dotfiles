@@ -249,3 +249,13 @@ nnoremap <c-n> :call NumberToggle()<cr>
 " Vertical column in ^V mode
 " noremap <silent> <c-v> :set cursorcolumn<cr><c-v>
 " au InsertLeave * set nocursorcolumn
+
+
+
+autocmd FileType ruby nmap <buffer> <D-e> <Plug>(xmpfilter-mark)
+autocmd FileType ruby xmap <buffer> <D-e> <Plug>(xmpfilter-mark)
+autocmd FileType ruby imap <buffer> <D-e> <Plug>(xmpfilter-mark)
+
+autocmd FileType ruby nmap <buffer> <D-r> <Plug>(xmpfilter-run)
+autocmd FileType ruby xmap <buffer> <D-r> <Plug>(xmpfilter-run)
+autocmd FileType ruby imap <buffer> <D-r> <Plug>(xmpfilter-run)

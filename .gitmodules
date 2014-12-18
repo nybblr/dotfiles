@@ -7,3 +7,6 @@
 [submodule "pidots"]
 	path = pidots
 	url = ssh://git@bitbucket.org/nybblr/pidots
+[submodule "prezto"]
+	path = prezto
+	url = https://github.com/sorin-ionescu/prezto.git

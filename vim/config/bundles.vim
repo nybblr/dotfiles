@@ -1,4 +1,5 @@
 " System
+Bundle 'tpope/vim-rbenv'
 Bundle 'maxbrunsfeld/vim-yankstack'
 Bundle 'xolox/vim-session'
 Bundle 'xolox/vim-misc'
@@ -94,6 +95,7 @@ Bundle 'carlosgaldino/elixir-snippets'
 " Collaboration
 Bundle 'mattn/webapi-vim'
 Bundle 'mattn/gist-vim'
+Bundle 't9md/vim-ruby-xmpfilter'
 
 " Good Looks
 Bundle 'mikewest/vimroom'
