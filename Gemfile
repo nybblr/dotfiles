@@ -1,7 +1,6 @@
 source 'https://rubygems.org/'
 
 # Terminal
-gem 'tmuxinator'
 gem 'git-smart' # smart pull/rebase/merge/log
 gem 'brewdler' # manage binary deps
 gem 'lunchy' # much nicer OSX launchctl
@@ -28,6 +27,3 @@ gem 'rb-fsevent' # osx events
 gem 'hijack' # debug ruby process
 gem 'gem-browse' # clone gem for inspection
 gem 'fastri' # more powerful ruby docs
-
-# Rails development
-gem 'spring' # quick commands
