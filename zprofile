@@ -26,6 +26,9 @@ export EDITOR='mvim -f'
 # No beer can, please
 export HOMEBREW_NO_EMOJI=1
 
+# Don't litter the home directory with rubies
+export RBENV_ROOT=/usr/local/var/rbenv
+
 # Source profile for machine-centric config
 if [ -f ~/.profile ]; then
   source ~/.profile
