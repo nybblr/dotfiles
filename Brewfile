@@ -79,7 +79,7 @@ cgdb
 valgrind
 
 # Media
-ffmpeg
+ffmpeg --with-libvpx --with-faac --with-libvorbis --with-theora --with-libogg
 
 fontforge
 harfbuzz
