@@ -110,3 +110,6 @@ Plugin 'bling/vim-airline'
 
 " Tests
 Plugin 'junegunn/vader.vim'
+
+" Status line
+" Plugin 'edkolev/tmuxline.vim'

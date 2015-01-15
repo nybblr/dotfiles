@@ -30,7 +30,7 @@ if has("gui_running")
 	au TabEnter,TabLeave,BufDelete * let &lines=200
 else
 	colorscheme tomorrow-night
-	set background=dark
+	" set background=dark
 endif
 
 

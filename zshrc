@@ -42,15 +42,9 @@ source $ZSH/oh-my-zsh.sh
 # Use Powerline
 # . ~/.powerline/bindings/zsh/powerline.zsh
 
-# Load tmuxinator
-[[ -s $HOME/.tmuxinator/scripts/tmuxinator ]] && source $HOME/.tmuxinator/scripts/tmuxinator
-
 # I am a confident typist. Don't need zsh to correct me.
 unsetopt correct_all
 unsetopt correct
 
 # Don't pause on escape.
 KEYTIMEOUT=1
-
-# Growl function that I'll never use
-growl() { echo -e $'\e]9;'${1}'\007' ; return ; }
