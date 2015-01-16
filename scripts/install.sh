@@ -12,7 +12,7 @@ cd ~
 dir=.dotfiles                    # dotfiles directory
 olddir=.dotfiles_old             # old dotfiles backup directory
 # list of files/folders to symlink in homedir
-files="bin gemrc irbrc aprc vimrc gvimrc vim zshrc zprofile zshmarks oh-my-zsh gitignore_global gitconfig tmux.conf zsh rspec chef caprc sackrc pentadactylrc siegerc rbenv-gemsets gdbinit"
+files="bin gemrc irbrc aprc vimrc gvimrc vim zshrc zprofile zshmarks oh-my-zsh gitignore_global gitconfig tmux.conf zsh rspec chef caprc pentadactylrc siegerc rbenv-gemsets gdbinit"
 
 ##########
 

@@ -31,7 +31,6 @@ postgresql
 # Search
 ack
 the_silver_searcher
-sack
 
 # VCS
 git
