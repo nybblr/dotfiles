@@ -72,3 +72,7 @@ alias ipqi='ipython qtconsole --pylab=inline'
 
 # Quick web server
 alias webserver='python -m SimpleHTTPServer'
+
+# Quick MacVim
+alias v='vim'
+alias m='mvim'
