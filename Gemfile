@@ -27,3 +27,7 @@ gem 'rb-fsevent' # osx events
 gem 'hijack' # debug ruby process
 gem 'gem-browse' # clone gem for inspection
 gem 'fastri' # more powerful ruby docs
+
+# Assets
+gem 'image_optim'
+gem 'image_optim_pack'
