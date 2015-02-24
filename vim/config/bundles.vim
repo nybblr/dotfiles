@@ -87,8 +87,11 @@ Plugin 'christoomey/vim-tmux-navigator'
 " Plugin 'vim-scripts/TaskList.vim'
 
 " Snippets
-Plugin 'msanders/snipmate.vim'
-Plugin 'scrooloose/snipmate-snippets'
+Plugin 'MarcWeber/vim-addon-mw-utils'
+Plugin 'tomtom/tlib_vim'
+Plugin 'garbas/vim-snipmate'
+Plugin 'honza/vim-snippets'
+Plugin 'mmozuras/snipmate-mocha'
 Plugin 'Raimondi/delimitMate'
 " Plugin 'carlosgaldino/elixir-snippets'
 
