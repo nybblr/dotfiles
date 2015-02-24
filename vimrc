@@ -172,6 +172,9 @@ let g:indent_guides_guide_size=1
 let g:airline_powerline_fonts = 1
 let g:airline#extensions#tabline#enabled = 1
 
+" Switch
+let g:switch_mapping = '-'
+
 " Source custom highlights
 exe 'source' expand('<sfile>:h') . '/.vim/config/highlights.vim'
 
