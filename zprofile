@@ -7,6 +7,10 @@ export PATH=$PATH:$HOME/.bin
 # Source NPM packages
 export PATH=$PATH:/usr/local/share/npm/bin
 
+# Source NVM
+export NVM_DIR=$(brew --prefix)/var/nvm
+source $(brew --prefix nvm)/nvm.sh
+
 # Source python packages
 # Unneeded as of latest Python
 # Remove after pip install --upgrade
