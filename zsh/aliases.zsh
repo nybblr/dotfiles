@@ -27,6 +27,8 @@ alias ggl='git log --oneline --graph --pretty="format:%C(yellow)%h%Cblue%d%Crese
 
 alias gdm='git diff `git merge-base master HEAD`'
 
+alias fix='$EDITOR `git diff --name-only | uniq`'
+
 # Diffs
 # alias cwdiff='wdiff -n -w $'"'"'\033[30;41m'"'"' -x $'"'"'\033[0m'"'"' -y $'"'"'\033[30;42m'"'"' -z $'"'"'\033[0m'"'"' \]'"'"
 
