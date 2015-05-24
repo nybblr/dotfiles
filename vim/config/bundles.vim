@@ -45,6 +45,7 @@ Plugin 'timcharper/textile.vim'
 Plugin 'digitaltoad/vim-jade'
 Plugin 'heartsentwined/vim-emblem'
 Plugin 'mustache/vim-mustache-handlebars'
+Plugin 'cespare/vim-toml'
 
 Plugin 'tristen/vim-sparkup'
 
