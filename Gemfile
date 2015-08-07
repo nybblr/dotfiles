@@ -2,7 +2,7 @@ source 'https://rubygems.org/'
 
 # Terminal
 gem 'git-smart' # smart pull/rebase/merge/log
-gem 'brewdler' # manage binary deps
+# gem 'brewdler' # manage binary deps
 gem 'lunchy' # much nicer OSX launchctl
 
 # Vim
