@@ -14,6 +14,8 @@ alias gum='git commit -am'
 gump() { gum "$*" && git push }
 alias gam='git add -A && git commit -m'
 gamp() { gam "$*" && git push }
+alias gap='git add -p'
+alias ganp='git add -N . && git add -p'
 alias gd='git diff'
 alias gwd='git diff --color-words'
 alias gcm='git commit -m'
