@@ -43,6 +43,7 @@ alias tds='tmux detach-client'
 
 # Pasteboard
 alias pbch='textutil -format html -convert rtf -stdin -stdout | pbcopy -Prefer rtf'
+alias hi='highlight -s solarized-light -O rtf'
 
 # Heroku
 alias hpr='git push heroku master && heroku restart'
@@ -80,3 +81,8 @@ alias webserver='python -m SimpleHTTPServer'
 # Quick MacVim
 alias v='vim'
 alias m='mvim'
+
+# Finder
+alias o='open .'
+alias showdots='defaults write com.apple.finder AppleShowAllFiles YES; killall Finder'
+alias hidedots='defaults write com.apple.finder AppleShowAllFiles NO; killall Finder'
