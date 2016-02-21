@@ -1,0 +1,2 @@
+#!/bin/bash
+fswatch *.ly | xargs -n1 lilypond -s
