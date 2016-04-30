@@ -5,6 +5,10 @@
 	excludesfile = ~/.gitignore_global
 [merge]
 	tool = splice
+[diff]
+	tool = mvimdiff
+[difftool "mvimdiff"]
+	cmd = mvim -f -d \"$LOCAL\" \"$REMOTE\"
 [mergetool "splice"]
 	cmd = "mvim -f $BASE $LOCAL $REMOTE $MERGED -c 'SpliceInit'"
 	trustExitCode = true
