@@ -17,6 +17,7 @@ gamp() { gam "$*" && git push }
 alias gap='git add -p'
 alias ganp='git add -N . && git add -p'
 alias gd='git diff'
+alias gdt='git difftool --no-prompt'
 alias gwd='git diff --color-words'
 alias gcm='git commit -m'
 gcmp() { gcm "$*" && git push}
