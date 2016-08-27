@@ -8,8 +8,8 @@ export PATH=$PATH:$HOME/.bin
 export PATH=$PATH:/usr/local/share/npm/bin
 
 # Source NVM
-export NVM_DIR=$(brew --prefix)/var/nvm
-source $(brew --prefix nvm)/nvm.sh
+export NVM_DIR="/Users/jonathan/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
 
 # Source python packages
 # Unneeded as of latest Python
