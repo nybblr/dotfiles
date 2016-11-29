@@ -47,6 +47,8 @@ Plugin 'digitaltoad/vim-jade'
 Plugin 'heartsentwined/vim-emblem'
 Plugin 'mustache/vim-mustache-handlebars'
 Plugin 'cespare/vim-toml'
+Plugin 'vim-pandoc/vim-pandoc-syntax'
+Plugin 'vim-pandoc/vim-pandoc'
 
 Plugin 'tristen/vim-sparkup'
 

@@ -175,6 +175,9 @@ let g:airline#extensions#tabline#enabled = 1
 " Switch
 let g:switch_mapping = '-'
 
+" Pandoc
+let g:pandoc#keyboard#display_motions = 0
+
 " Source custom highlights
 exe 'source' expand('<sfile>:h') . '/.vim/config/highlights.vim'
 
