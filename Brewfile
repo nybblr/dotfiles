@@ -1,14 +1,14 @@
 # Languages
-python
-python3
-node
-gfortran
+# python
+# python3
+# node
+# gfortran
 
 # Python
-numpy
-scipy
-swig
-gdbm
+# numpy
+# scipy
+# swig
+# gdbm
 # ???
 
 # Ruby
@@ -16,40 +16,40 @@ rbenv
 ruby-build
 rbenv-gem-rehash
 rbenv-gemset
-readline
+# readline
 
-phantomjs
+# phantomjs
 
 # Apps
 # mutt
 
 # Database
 redis
-sqlite
+# sqlite
 postgresql
 
 # Search
-ack
+# ack
 the_silver_searcher
 
 # VCS
 git
-svn
-mercurial
+# svn
+# mercurial
 tig
-hub
-wdiff
+# hub
+# wdiff
 
 # Terminal
 zsh
 tmux
-autojump
+# autojump
 tree
 wget
 htop
 # --use-gcc
 heroku-toolbelt
-ec2-api-tools
+# ec2-api-tools
 reattach-to-user-namespace
 cloc
 trash
@@ -57,67 +57,65 @@ trash
 # Network
 openssl
 siege
-curl-ca-bundle
-ngrok
+# curl-ca-bundle
+# ngrok
 
 # Vim
 vim
 # --with-ruby --with-python --with-perl
-macvim
 ctags
 
 # Compile
-autoconf
-automake
-cmake
-gcc48
+# autoconf
+# automake
+# cmake
+# gcc48
 
 # Debug
-gdb
-cgdb
-valgrind
+# gdb
+# cgdb
+# valgrind
 
 # Media
 ffmpeg --with-libvpx --with-faac --with-libvorbis --with-theora --with-libogg
 
-fontforge
-harfbuzz
-icu4c
+# fontforge
+# harfbuzz
+# icu4c
 
-imagemagick
+# imagemagick
 libogg
 libvorbis
-sdl
+# sdl
 # --enable-music-ogg
-sdl_image
-sdl_mixer
-sdl_ttf
+# sdl_image
+# sdl_mixer
+# sdl_ttf
 
 # Interfaces
-qt
-pyqt
+# qt
+# pyqt
 
-gnuplot
-ghostscript
+# gnuplot
+# ghostscript
 
 # Drives
-fuse4x
-sshfs
+# fuse4x
+# sshfs
 
 # Libs
-libevent
-libgit2
-libxml2
-libxslt
-libksba
+# libevent
+# libgit2
+# libxml2
+# libxslt
+# libksba
 #libnac ???
 
-libyaml
-openssl
-opencv
-eigen
-pcre
-suite-sparse
-zmq
+# libyaml
+# opencv
+# eigen
+# pcre
+# suite-sparse
+# zmq
 
 # Add section for taps!
