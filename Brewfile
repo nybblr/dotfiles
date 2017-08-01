@@ -1,121 +1,58 @@
-# Languages
-# python
-# python3
-# node
-# gfortran
+tap "caskroom/cask"
+tap "homebrew/bundle"
 
-# Python
-# numpy
-# scipy
-# swig
-# gdbm
-# ???
+brew "certbot"
+brew "fswatch"
+brew "pandoc"
+brew "yarn"
 
 # Ruby
-rbenv
-ruby-build
-rbenv-gem-rehash
-rbenv-gemset
-# readline
-
-# phantomjs
-
-# Apps
-# mutt
+brew "rbenv"
+brew "ruby-build"
 
 # Database
-redis
-# sqlite
-postgresql
+brew "redis"
+brew "sqlite"
+brew "postgresql"
+brew "mongodb"
 
 # Search
-# ack
-the_silver_searcher
+brew "the_silver_searcher"
 
 # VCS
-git
-# svn
-# mercurial
-tig
-# hub
-# wdiff
+brew "git"
+brew "tig"
 
 # Terminal
-zsh
-tmux
-# autojump
-tree
-wget
-htop
-# --use-gcc
-heroku-toolbelt
-# ec2-api-tools
-reattach-to-user-namespace
-cloc
-trash
+brew "zsh"
+brew "tmux"
+brew "tree"
+brew "wget"
+brew "htop"
+brew "heroku"
+brew "reattach-to-user-namespace"
+brew "cloc"
+brew "trash"
 
 # Network
-openssl
-siege
-# curl-ca-bundle
-# ngrok
+brew "openssl"
+brew "siege"
 
 # Vim
-vim
-# --with-ruby --with-python --with-perl
-ctags
-
-# Compile
-# autoconf
-# automake
-# cmake
-# gcc48
-
-# Debug
-# gdb
-# cgdb
-# valgrind
+brew "vim"
+brew "ctags"
 
 # Media
-ffmpeg --with-libvpx --with-faac --with-libvorbis --with-theora --with-libogg
+brew "ffmpeg"
+#--with-libvpx --with-faac --with-libvorbis --with-theora --with-libogg
+# libogg
+# libvorbis
 
 # fontforge
 # harfbuzz
 # icu4c
 
-# imagemagick
-libogg
-libvorbis
-# sdl
-# --enable-music-ogg
-# sdl_image
-# sdl_mixer
-# sdl_ttf
-
-# Interfaces
-# qt
-# pyqt
-
-# gnuplot
-# ghostscript
-
-# Drives
-# fuse4x
 # sshfs
-
-# Libs
-# libevent
-# libgit2
-# libxml2
-# libxslt
-# libksba
-#libnac ???
-
-# libyaml
-# opencv
-# eigen
-# pcre
-# suite-sparse
-# zmq
-
-# Add section for taps!
+# macvim
+# chrome
+# dropbox
