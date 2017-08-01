@@ -180,6 +180,8 @@ let g:pandoc#keyboard#display_motions = 0
 let g:pandoc#syntax#conceal#urls = 1
 let g:pandoc#syntax#codeblocks#embeds#langs = ['diff', 'css', 'html', 'json', 'javascript', 'ruby']
 
+" let g:pandoc#syntax#conceal#use = 0
+
 " Source custom highlights
 exe 'source' expand('<sfile>:h') . '/.vim/config/highlights.vim'
 

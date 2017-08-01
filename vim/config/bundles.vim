@@ -49,6 +49,8 @@ Plugin 'mustache/vim-mustache-handlebars'
 Plugin 'cespare/vim-toml'
 Plugin 'vim-pandoc/vim-pandoc-syntax'
 Plugin 'vim-pandoc/vim-pandoc'
+Plugin 'pangloss/vim-javascript'
+Plugin 'mxw/vim-jsx'
 
 Plugin 'tristen/vim-sparkup'
 
@@ -97,6 +99,7 @@ Plugin 'garbas/vim-snipmate'
 Plugin 'honza/vim-snippets'
 Plugin 'mmozuras/snipmate-mocha'
 Plugin 'Raimondi/delimitMate'
+Plugin 'mattn/emmet-vim'
 " Plugin 'carlosgaldino/elixir-snippets'
 
 " Collaboration
@@ -104,8 +107,9 @@ Plugin 'mattn/webapi-vim'
 Plugin 'mattn/gist-vim'
 Plugin 't9md/vim-ruby-xmpfilter'
 
-" Good Looks
+" Prose
 Plugin 'mikewest/vimroom'
+" Plugin 'rhysd/vim-grammarous'
 
 " Colorschemes
 Plugin 'altercation/vim-colors-solarized'
