@@ -1,9 +1,6 @@
 [submodule "oh-my-zsh"]
 	path = oh-my-zsh
 	url = https://github.com/robbyrussell/oh-my-zsh
-[submodule "chef"]
-	path = chef
-	url = ssh://git@github.com/nybblr/chef
 [submodule "pidots"]
 	path = pidots
 	url = ssh://git@bitbucket.org/nybblr/pidots
