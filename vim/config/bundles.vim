@@ -117,7 +117,8 @@ Plugin 'altercation/vim-colors-solarized'
 Plugin 'spencerwi/caffeine.vim'
 
 " Status Bar
-Plugin 'bling/vim-airline'
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
 
 " Tests
 Plugin 'junegunn/vader.vim'
