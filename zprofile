@@ -9,15 +9,16 @@ export PATH=$PATH:/usr/local/share/npm/bin
 
 # Source NVM
 export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" --no-use # This loads nvm
+
+# Prepend default node (fast)
+export DEFAULT_NODE_DIR=($NVM_DIR/versions/node/v7.*/bin)
+export PATH=${DEFAULT_NODE_DIR[1]}:$PATH
 
 # Source python packages
 # Unneeded as of latest Python
 # Remove after pip install --upgrade
 # export PATH=$PATH:/usr/local/share/python
-
-# Source boxen environment
-[ -f /opt/boxen/env.sh ] && source /opt/boxen/env.sh
 
 # Set language (Lion bug)
 export LANG=en_US.UTF-8
