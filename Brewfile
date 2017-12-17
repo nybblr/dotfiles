@@ -3,6 +3,7 @@ tap "homebrew/bundle"
 
 brew "certbot"
 brew "fswatch"
+brew "watchman"
 brew "pandoc"
 brew "yarn"
 
@@ -28,6 +29,7 @@ brew "zsh"
 brew "tmux"
 brew "tree"
 brew "wget"
+brew "gnu-sed"
 brew "htop"
 brew "heroku"
 brew "reattach-to-user-namespace"
@@ -37,6 +39,8 @@ brew "trash"
 # Network
 brew "openssl"
 brew "siege"
+brew "telnet"
+cask "ngrok"
 
 # Vim
 brew "vim"
