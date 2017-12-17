@@ -1,0 +1,42 @@
+#!/bin/bash
+DEV_HOST="localhost:2368"
+PROD_HOST="blog.yellowscale.com"
+BUILD_DEST=${1:-./build}
+
+DEV_URL="http://${DEV_HOST}"
+PROD_URL="https://${PROD_HOST}"
+
+# Hop into build directory
+pushd $BUILD_DEST > /dev/null
+
+# Crawl the entire site
+# Requires wget: brew install wget
+wget -q -r -nH \
+  "${DEV_URL}/" \
+  "${DEV_URL}/sitemap.xml" \
+  "${DEV_URL}/sitemap-pages.xml" \
+  "${DEV_URL}/sitemap-posts.xml" \
+  "${DEV_URL}/sitemap-authors.xml" \
+  "${DEV_URL}/sitemap-tags.xml" \
+  "${DEV_URL}/rss"
+
+# Strip query params from file names
+for i in `find . -type f`
+do
+  mv $i `echo $i | cut -d? -f1`
+done
+
+# Update production URL
+# Requires gnu-sed on macOS: brew install gnu-sed
+ESCAPE_REGEX='s/[]\/$*.^[]/\\&/g'
+
+ESCAPED_DEV_HOST="$(echo $DEV_HOST | sed -e $ESCAPE_REGEX)"
+ESCAPED_PROD_HOST="$(echo $PROD_HOST | sed -e $ESCAPE_REGEX)"
+ESCAPED_DEV_URL="$(echo $DEV_URL | sed -e $ESCAPE_REGEX)"
+ESCAPED_PROD_URL="$(echo $PROD_URL | sed -e $ESCAPE_REGEX)"
+
+find . -type f -exec gsed -i'' -e "s/${ESCAPED_DEV_URL}/${ESCAPED_PROD_URL}/g" {} +
+find . -type f -exec gsed -i'' -e "s/${ESCAPED_DEV_HOST}/${ESCAPED_PROD_HOST}/g" {} +
+
+# Return to original directory
+popd > /dev/null
