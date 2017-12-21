@@ -26,6 +26,9 @@ wget -q -r -nH \
   "${DEV_URL}/sitemap-tags.xml" \
   "${DEV_URL}/rss"
 
+wget -q -x -nH --content-on-error \
+  "${DEV_URL}/404.html"
+
 # Strip query params from file names
 for i in `find . -type d -path "./.git" -prune -o -type f -print`
 do
