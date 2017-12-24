@@ -13,7 +13,7 @@ pushd $BUILD_DEST > /dev/null
 git rm -rfq .
 git clean -fxdq
 git reset -q
-git checkout -q .gitignore
+git checkout -q .gitignore .gitlab-ci.yml
 
 # Crawl the entire site
 # Requires wget: brew install wget
