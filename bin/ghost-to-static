@@ -19,19 +19,33 @@ git clean -fxdq
 git reset -q
 git checkout -q .gitignore .gitlab-ci.yml
 
+# Crawl sitemap
+# Requires gnu-grep on macOS: brew install grep
+sitemap_links () {
+  URL_REGEX='(?<=<loc>)https?://[^<]+(?=</loc>)'
+  wget -q -O - $1 | ggrep -oP $URL_REGEX
+}
+export -f sitemap_links
+
+SITEMAP="${DEV_URL}/sitemap.xml"
+SITEMAPS=$(sitemap_links $SITEMAP)
+SITEMAP_URLS="$(echo $SITEMAPS | xargs -n1 -I{} bash -c 'sitemap_links {}')"
+
+CRAWL_URLS="\
+$DEV_URL/
+$DEV_URL/rss
+$SITEMAP
+$SITEMAPS
+$SITEMAP_URLS \
+"
+
 # Crawl the entire site
 # Requires wget: brew install wget
-wget -q -r -nH \
-  "${DEV_URL}/" \
-  "${DEV_URL}/sitemap.xml" \
-  "${DEV_URL}/sitemap-pages.xml" \
-  "${DEV_URL}/sitemap-posts.xml" \
-  "${DEV_URL}/sitemap-authors.xml" \
-  "${DEV_URL}/sitemap-tags.xml" \
-  "${DEV_URL}/rss"
-
+wget -q -r -l inf -nH $CRAWL_URLS
 wget -q -x -nH --content-on-error \
   "${DEV_URL}/404.html"
+
+echo "Finished crawling ${DEV_URL}..."
 
 # Strip query params from file names
 for i in `find . -type d -path "./.git" -prune -o -type f -print`
