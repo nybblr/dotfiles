@@ -2,6 +2,7 @@
 PROD_URL=${1}
 DEV_URL=${2:-"http://localhost:2368"}
 BUILD_DEST=${3:-./build}
+AMAZON_AFFILIATE_TAG=${4}
 
 HOST_REGEX='s|^https?://(.+)$|\1|'
 
@@ -64,6 +65,10 @@ ESCAPED_PROD_URL="$(echo $PROD_URL | sed -e $ESCAPE_REGEX)"
 
 find . -type d -path "./.git" -prune -o -type f -exec gsed -i'' -e "s/${ESCAPED_DEV_URL}/${ESCAPED_PROD_URL}/g" {} +
 find . -type d -path "./.git" -prune -o -type f -exec gsed -i'' -e "s/${ESCAPED_DEV_HOST}/${ESCAPED_PROD_HOST}/g" {} +
+
+# Add affiliate code to Amazon links
+AMAZON_REGEX='s/href="\([^"]*\.amazon\.com\/[^"]*\)"/href="\1?tag='"${AMAZON_AFFILIATE_TAG}"'"/g'
+find . -type d -path "./.git" -prune -o -type f -exec gsed -i'' -e "${AMAZON_REGEX}" {} +
 
 # Return to original directory
 popd > /dev/null
