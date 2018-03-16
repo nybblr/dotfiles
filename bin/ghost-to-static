@@ -18,7 +18,7 @@ pushd $BUILD_DEST > /dev/null
 git rm -rfq .
 git clean -fxdq
 git reset -q
-git checkout -q .gitignore .gitlab-ci.yml
+git checkout -q .gitignore .gitlab-ci.yml CNAME
 
 # Crawl sitemap
 # Requires gnu-grep on macOS: brew install grep
