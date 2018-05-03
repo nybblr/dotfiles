@@ -12,7 +12,7 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" --no-use # This loads nvm
 
 # Prepend default node (fast)
-export DEFAULT_NODE_DIR=($NVM_DIR/versions/node/v7.*/bin)
+export DEFAULT_NODE_DIR=($NVM_DIR/versions/node/v8.*/bin)
 export PATH=${DEFAULT_NODE_DIR[1]}:$PATH
 
 # Source python packages
