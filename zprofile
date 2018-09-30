@@ -33,7 +33,7 @@ export HOMEBREW_NO_EMOJI=1
 
 # Don't litter the home directory with rubies
 export RBENV_ROOT=/usr/local/var/rbenv
-eval "$(rbenv init -)"
+# eval "$(rbenv init -)"
 
 # Source profile for machine-centric config
 if [ -f ~/.profile ]; then
