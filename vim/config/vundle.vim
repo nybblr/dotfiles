@@ -1,13 +1,11 @@
 """"" START Vundle """""
 filetype off
 
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
 
-" let Vundle manage Vundle
-" except that it's a submodule
-" to prevent chicken/egg
-Bundle 'gmarik/vundle'
+" let Vundle manage Vundle, required
+Plugin 'VundleVim/Vundle.vim'
 
 " Source bundles
 exe 'source' expand('<sfile>:h') . '/bundles.vim'
@@ -15,5 +13,6 @@ exe 'source' expand('<sfile>:h') . '/bundles.vim'
 " Source powerline
 " set rtp+=~/.powerline/bindings/vim
 
+call vundle#end()
 filetype plugin indent on
 """"" END Vundle """""
