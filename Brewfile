@@ -5,14 +5,14 @@ brew "certbot"
 brew "fswatch"
 brew "watchman"
 brew "pandoc"
-brew "yarn"
+# brew "yarn"
 
 # Ruby
-brew "rbenv"
-brew "ruby-build"
+# brew "rbenv"
+# brew "ruby-build"
 
 # Database
-brew "redis"
+# brew "redis"
 brew "sqlite"
 brew "postgresql"
 brew "mongodb"
@@ -34,7 +34,7 @@ brew "htop"
 brew "heroku"
 brew "reattach-to-user-namespace"
 brew "cloc"
-brew "trash"
+# brew "trash"
 
 # Network
 brew "openssl"
