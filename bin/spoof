@@ -1,0 +1,5 @@
+#!/bin/bash
+export INTERFACE=${1:-"en0"}
+export RANDOM_MAC_ADDRESS=$(openssl rand -hex 6 | sed 's/\(..\)/\1:/g; s/.$//')
+sudo ifconfig $INTERFACE ether $RANDOM_MAC_ADDRESS
+echo "${INTERFACE}: ${RANDOM_MAC_ADDRESS}"
