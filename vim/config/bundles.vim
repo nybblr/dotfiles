@@ -112,9 +112,10 @@ Plugin 'mikewest/vimroom'
 " Plugin 'rhysd/vim-grammarous'
 
 " Colorschemes
-Plugin 'altercation/vim-colors-solarized'
+Plugin 'hzchirs/vim-material'
+" Plugin 'altercation/vim-colors-solarized'
 " Plugin 'nanotech/jellybeans.vim'
-Plugin 'spencerwi/caffeine.vim'
+" Plugin 'spencerwi/caffeine.vim'
 
 " Status Bar
 Plugin 'vim-airline/vim-airline'

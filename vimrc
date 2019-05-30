@@ -171,6 +171,7 @@ let g:indent_guides_guide_size=1
 " Airline
 let g:airline_powerline_fonts = 1
 let g:airline#extensions#tabline#enabled = 1
+let g:airline_theme = 'material'
 
 " Switch
 let g:switch_mapping = '-'

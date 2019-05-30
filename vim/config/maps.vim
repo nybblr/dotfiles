@@ -231,8 +231,8 @@ nnoremap <leader>ss :SaveSession<cr>
 nnoremap <leader>ls :OpenSession<cr>
 
 " Quick theme changing
-map <leader>cd :colorscheme railscasts<cr>
-map <leader>cl :colorscheme solarized \| set background=light<cr>
+" map <leader>cd :colorscheme railscasts<cr>
+" map <leader>cl :colorscheme solarized \| set background=light<cr>
 map <leader>cb :set guifont=Source\ Code\ Pro:h13<cr>
 map <leader>cs :set guifont=Menlo,12<cr>
 

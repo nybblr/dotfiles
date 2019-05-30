@@ -7,10 +7,11 @@ endif
 
 
 if has("gui_running")
-	let g:solarized_contrast="high"
 	set background=dark
-	colorscheme solarized
+	colorscheme vim-material
 
+	" let g:solarized_contrast="high"
+	" colorscheme solarized
 	" colorscheme railscasts
 	" colorscheme tomorrow-night
 
