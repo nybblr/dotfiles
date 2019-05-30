@@ -31,6 +31,6 @@
 	commit = green
 	meta = yellow
 	frag = cyan
-	old = red
-	new = green
+	old = red reverse
+	new = green reverse
 	whitespace = red reverse
