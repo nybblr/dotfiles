@@ -250,7 +250,26 @@ nnoremap <c-n> :call NumberToggle()<cr>
 " noremap <silent> <c-v> :set cursorcolumn<cr><c-v>
 " au InsertLeave * set nocursorcolumn
 
+let s:hidden_all = 0
+function! ToggleHiddenAll()
+	if s:hidden_all  == 0
+		let s:hidden_all = 1
+		set noshowmode
+		set noruler
+		set laststatus=0
+		set noshowcmd
+		set showtabline=0
+	else
+		let s:hidden_all = 0
+		set showmode
+		set ruler
+		set laststatus=2
+		set showcmd
+		set showtabline=2
+	endif
+endfunction
 
+nnoremap <S-h> :call ToggleHiddenAll()<CR>
 
 autocmd FileType ruby nmap <buffer> <D-e> <Plug>(xmpfilter-mark)
 autocmd FileType ruby xmap <buffer> <D-e> <Plug>(xmpfilter-mark)

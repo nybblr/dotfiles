@@ -1,6 +1,7 @@
 " Highlight non-printable characters
-hi NonText ctermfg=darkgray guifg=gray
-"
+" hi NonText ctermfg=darkgray guifg=gray
+hi NonText guifg=bg
+
 " Highlight space indents
 redir => cl | silent hi CursorLine | redir END
 
