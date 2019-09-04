@@ -68,7 +68,7 @@ Plugin 'tpope/vim-dispatch'
 " Plugin 'skwp/vim-ruby-conque'
 
 " Code Semantics
-Plugin 'vim-scripts/neocomplcache'
+Plugin 'neoclide/coc.nvim', {'branch': 'release'}
 Plugin 'scrooloose/syntastic'
 Plugin 'majutsushi/tagbar'
 " Plugin 'nathanaelkane/vim-indent-guides'
@@ -108,7 +108,7 @@ Plugin 'mattn/gist-vim'
 Plugin 't9md/vim-ruby-xmpfilter'
 
 " Prose
-Plugin 'mikewest/vimroom'
+" Plugin 'mikewest/vimroom'
 " Plugin 'rhysd/vim-grammarous'
 
 " Colorschemes

@@ -72,7 +72,10 @@ set selectmode=""
 " Autocomplete for menu
 set wildmenu
 set wildmode=longest,list
-"
+
+" Configure autocomplete
+" set completeopt=longest,menuone
+
 " Let there be trailing whitespace!
 set list
 set listchars=tab:»-,trail:~,eol:¬
@@ -87,7 +90,10 @@ set listchars=tab:»-,trail:~,eol:¬
 autocmd BufWinLeave * call clearmatches()
 
 " 3 line margin around cursor
-set scrolloff=3
+set scrolloff=2
+
+" Don't blink the cursor
+set guicursor+=a:blinkon0
 
 " I want to see where my cursor is
 set cursorline
@@ -153,9 +159,6 @@ let NERDTreeBookmarksFile="~/.vim/.bookmarks"
 xnoremap <ScrollWheelUp> <esc><ScrollWheelUp>
 xnoremap <ScrollWheelDown> <esc><ScrollWheelDown>
 
-
-" Autocomplete
-let g:neocomplcache_enable_at_startup = 1
 
 " Sessions
 let g:session_directory='./'

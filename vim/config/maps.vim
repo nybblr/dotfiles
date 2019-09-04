@@ -239,7 +239,7 @@ map <leader>cs :set guifont=Menlo,12<cr>
 " Relative line numbers
 function! NumberToggle()
 	if(&relativenumber == 1)
-		set number
+		set norelativenumber
 	else
 		set relativenumber
 	endif
@@ -256,6 +256,7 @@ function! ToggleHiddenAll()
 		let s:hidden_all = 1
 		set noshowmode
 		set noruler
+		set nolist
 		set laststatus=0
 		set noshowcmd
 		set showtabline=0
@@ -263,6 +264,7 @@ function! ToggleHiddenAll()
 		let s:hidden_all = 0
 		set showmode
 		set ruler
+		set list
 		set laststatus=2
 		set showcmd
 		set showtabline=2
@@ -270,6 +272,44 @@ function! ToggleHiddenAll()
 endfunction
 
 nnoremap <S-h> :call ToggleHiddenAll()<CR>
+
+" function! InsertTabWrapper()
+" 	let col = col('.') - 1
+" 	if !col || getline('.')[col - 1] !~ '\k'
+" 		return "\<tab>"
+" 	else
+" 		return "\<c-n>"
+" 	endif
+" endfunction
+" inoremap <tab> <c-r>=InsertTabWrapper()<cr>
+" inoremap <expr> <tab> InsertTabWrapper()
+" inoremap <s-tab> <c-p>
+
+" Use tab for trigger completion with characters ahead and navigate.
+" Use command ':verbose imap <tab>' to make sure tab is not mapped by other plugin.
+inoremap <silent><expr> <TAB>
+			\ pumvisible() ? "\<C-n>" :
+			\ <SID>check_back_space() ? "\<TAB>" :
+			\ coc#refresh()
+inoremap <expr><S-TAB> pumvisible() ? "\<C-p>" : "\<C-h>"
+
+function! s:check_back_space() abort
+	let col = col('.') - 1
+	return !col || getline('.')[col - 1]  =~# '\s'
+endfunction
+
+" Use <c-space> to trigger completion.
+inoremap <silent><expr> <c-space> coc#refresh()
+
+" Use <cr> to confirm completion, `<C-g>u` means break undo chain at current position.
+" Coc only does snippet and additional edit on confirm.
+" inoremap <expr> <cr> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
+
+" Remap keys for gotos
+nmap <silent> gd <Plug>(coc-definition)
+nmap <silent> gy <Plug>(coc-type-definition)
+nmap <silent> gi <Plug>(coc-implementation)
+nmap <silent> gr <Plug>(coc-references)
 
 autocmd FileType ruby nmap <buffer> <D-e> <Plug>(xmpfilter-mark)
 autocmd FileType ruby xmap <buffer> <D-e> <Plug>(xmpfilter-mark)
