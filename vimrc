@@ -75,6 +75,7 @@ set wildmode=longest,list
 
 " Configure autocomplete
 " set completeopt=longest,menuone
+set shortmess+=c
 
 " Let there be trailing whitespace!
 set list
