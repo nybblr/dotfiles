@@ -83,8 +83,9 @@ nmap <s-tab> <c-o>
 map <s-cr> mZO<esc>`Z
 map <cr> mZo<esc>`Z
 
-" More intuitive undo
-map U :redo<cr>
+" More intuitive, quiet undo / redo
+map <silent> u :silent undo<cr>
+map <silent> U :silent redo<cr>
 
 " Retain selection after indent
 vnoremap > >gv
