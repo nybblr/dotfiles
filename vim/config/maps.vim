@@ -250,6 +250,14 @@ nnoremap <c-n> :call NumberToggle()<cr>
 " noremap <silent> <c-v> :set cursorcolumn<cr><c-v>
 " au InsertLeave * set nocursorcolumn
 
+function! ScreencastReady()
+	" Approx 16:9 ratio
+	set guifont=Source\ Code\ Pro\ for\ Powerline:h27
+	set lines=15 columns=59
+endfunction
+
+nnoremap <D-H> :call ScreencastReady()<CR>
+
 let s:hidden_all = 0
 function! ToggleHiddenAll()
 	if s:hidden_all  == 0
