@@ -257,6 +257,7 @@ function! ToggleHiddenAll()
 		set noshowmode
 		set noruler
 		set nolist
+		set signcolumn=no
 		set laststatus=0
 		set noshowcmd
 		set showtabline=0
@@ -265,6 +266,7 @@ function! ToggleHiddenAll()
 		set showmode
 		set ruler
 		set list
+		set signcolumn=auto
 		set laststatus=2
 		set showcmd
 		set showtabline=2
