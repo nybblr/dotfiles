@@ -1,6 +1,7 @@
 {
   "suggest.autoTrigger": "trigger",
   "suggest.snippetIndicator": "►",
-  "suggest.disableKind": "true",
-  "suggest.disableMenu": "true"
+  "suggest.disableKind": true,
+  "suggest.disableMenu": true,
+  "diagnostic.enable": false
 }
