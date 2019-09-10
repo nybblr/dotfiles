@@ -50,7 +50,9 @@ Plugin 'cespare/vim-toml'
 Plugin 'vim-pandoc/vim-pandoc-syntax'
 Plugin 'vim-pandoc/vim-pandoc'
 Plugin 'pangloss/vim-javascript'
-Plugin 'mxw/vim-jsx'
+" Plugin 'mxw/vim-jsx'
+" Plugin 'MaxMEllon/vim-jsx-pretty'
+Plugin 'nybblr/vim-jsx-pretty'
 
 Plugin 'tristen/vim-sparkup'
 
