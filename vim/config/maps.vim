@@ -121,6 +121,19 @@ imap ;; <esc>
 " Quick switching
 nnoremap - :Switch<cr>
 
+" Run a command without shifting scroll
+command! -nargs=* -complete=command PreserveView
+  \ try
+    \| let b:winview = winsaveview()
+    \| exec <q-args>
+  \| finally
+    \| call winrestview(b:winview)
+    \| unlet b:winview
+  \| endtry
+
+" Poof.js for inline code execution
+nmap <silent> <tab> :silent PreserveView %! poofjs 2> /dev/null<cr>
+
 " For mac users (using the 'apple' key)
 map <D-]> <C-w>w
 map <D-[> <C-w>W
