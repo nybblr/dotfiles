@@ -110,7 +110,7 @@ GEM
     typhoeus (0.7.1)
       ethon (>= 0.7.1)
     websocket (1.2.2)
-    yard (0.8.7.6)
+    yard (0.9.20)
 
 PLATFORMS
   ruby
