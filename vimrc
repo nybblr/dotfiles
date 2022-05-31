@@ -2,6 +2,9 @@
 set nocompatible
 set encoding=utf-8
 
+" Disable noisy bell
+set visualbell t_vb=
+
 " Enable matchit
 runtime macros/matchit.vim
 

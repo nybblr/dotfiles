@@ -38,10 +38,10 @@ brew "cloc"
 # brew "trash"
 
 # Network
-brew "openssl"
-brew "siege"
+##brew "openssl"
+##brew "siege"
 brew "telnet"
-cask "ngrok"
+##cask "ngrok"
 
 # Vim
 brew "vim"
@@ -56,8 +56,3 @@ brew "ffmpeg"
 # fontforge
 # harfbuzz
 # icu4c
-
-# sshfs
-# macvim
-# chrome
-# dropbox

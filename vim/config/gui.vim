@@ -22,7 +22,7 @@ if has("gui_running")
 	set guioptions-=T
 
 	" set guifont=Menlo,12
-	set guifont=Source\ Code\ Pro\ for\ Powerline:h24
+	set guifont=Source\ Code\ Pro\ for\ Powerline:h16
 
 	set macmeta
 
