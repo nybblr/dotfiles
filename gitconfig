@@ -21,12 +21,9 @@
 [alias]
 	bnr = !~/.dotfiles/scripts/git-as.sh ~/.ssh/id_rsa.bnr
 [core]
-	pager = /usr/local/share/git-core/contrib/diff-highlight/diff-highlight | less
-[color "diff-highlight"]
-	oldNormal = red bold
-	oldHighlight = red bold 52
-	newNormal = green bold
-	newHighlight = green bold 22
+	pager = diffr --colors refine-added:none:background:0x33,0x77,0x33:bold --colors added:none:background:0x33,0x44,0x33 --colors refine-removed:none:background:0x99,0x33,0x33:bold --colors removed:none:background:0x55,0x33,0x33 | less -R
+[interactive]
+	diffFilter = diffr
 [color "diff"]
 	commit = green
 	meta = yellow
